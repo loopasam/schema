@@ -10,7 +10,7 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-        render();
+	List<Restaurant> restaurants = Restaurant.find("order by name desc").fetch();
+	render(restaurants);    
     }
-
 }
