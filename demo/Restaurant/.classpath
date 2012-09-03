@@ -2,9 +2,11 @@
 <classpath>
 	<classpathentry excluding="views/**" kind="src" path="app"/>
 	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="schema-1.0"/>
 	
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/samuel/workspace/lib/play-1.2.5/framework/play-1.2.5.jar" sourcepath="/home/samuel/workspace/lib/play-1.2.5/framework/src" />
+	<classpathentry kind="lib" path="/home/samuel/git/schema/demo/Restaurant/modules/schema-1.0/lib/play-schema.jar"/>
 	<classpathentry kind="lib" path="/home/samuel/workspace/lib/play-1.2.5/framework/lib/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="lib" path="/home/samuel/workspace/lib/play-1.2.5/framework/lib/postgresql-9.0.jar"/>
 	<classpathentry kind="lib" path="/home/samuel/workspace/lib/play-1.2.5/framework/lib/signpost-core-1.2.jar"/>

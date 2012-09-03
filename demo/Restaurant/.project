@@ -15,5 +15,7 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.playframework.playclipse.playNature</nature>
 	</natures>
-	
+	<linkedResources><link><name>schema-1.0</name><type>2</type><location>/home/samuel/git/schema/demo/Restaurant/modules/schema-1.0/app</location></link>
+<link><name>conf/schema-1.0</name><type>2</type><location>/home/samuel/git/schema/demo/Restaurant/modules/schema-1.0/conf</location></link>
+</linkedResources>
 </projectDescription>
