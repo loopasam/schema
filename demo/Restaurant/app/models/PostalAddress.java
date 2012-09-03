@@ -2,11 +2,16 @@ package models;
 
 import java.util.*;
 
+import javax.persistence.Entity;
+
+import play.db.jpa.Model;
+
 /**
 * The mailing address.
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/PostalAddress
 */
-public class PostalAddress {
+@Entity
+public class PostalAddress extends Model {
 
 	/**
 	* The street address. For example, 1600 Amphitheatre Pkwy.
