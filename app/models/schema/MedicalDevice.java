@@ -1,99 +1,87 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
-* No documentation available :-(
+* No documentation available
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/MedicalDevice
 */
-public class MedicalDevice extends Model {
+public class MedicalDevice {
 
 	/**
-	* No documentation available :-(
-	*/
-	public MedicalDevicePurpose purpose;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String procedure;
-
-	/**
-	* No documentation available :-(
-	*/
-	public MedicalEntity seriousAdverseOutcome;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String preOp;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalIndication indication;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalEntity adverseOutcome;
+	public MedicalDevicePurpose purpose;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String postOp;
+	public String procedure;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public String preOp;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalEntity seriousAdverseOutcome;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalContraindication contraindication;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String alternateName;
+	public MedicalEntity adverseOutcome;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalGuideline guideline;
+	public String postOp;
 
 	/**
-	* No documentation available :-(
-	*/
-	public MedicalStudy study;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public Organization recognizingAuthority;
+	public MedicalStudy study;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicineSystem medicineSystem;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalCode code;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String additionalType;
+	public MedicalGuideline guideline;
 
 	/**
-	* A short description of the item.
+	* No documentation available
 	*/
-	public String description;
+	public String alternateName;
 
 	/**
 	* URL of the item.
@@ -109,4 +97,14 @@ public class MedicalDevice extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

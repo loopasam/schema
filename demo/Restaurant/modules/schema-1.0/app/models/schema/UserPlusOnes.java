@@ -1,14 +1,22 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
 * User interaction: +1.
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/UserPlusOnes
 */
-public class UserPlusOnes extends Model {
+public class UserPlusOnes {
+
+	/**
+	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor. (legacy spelling; see singular form, performer).
+	*/
+	//public List<Person> performers;
+
+	/**
+	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor. (legacy spelling; see singular form, performer).
+	*/
+	//public List<Organization> performers;
 
 	/**
 	* The location of the event or organization.
@@ -21,19 +29,9 @@ public class UserPlusOnes extends Model {
 	//public Place location;
 
 	/**
-	* The end date and time of the event (in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 date format</a>).
+	* An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.
 	*/
-	public Date endDate;
-
-	/**
-	* The first broadcast date of the TV season or series.
-	*/
-	public Date startDate;
-
-	/**
-	* An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
-	*/
-	public Offer offers;
+	public Event superEvent;
 
 	/**
 	* A person attending the event.
@@ -44,6 +42,21 @@ public class UserPlusOnes extends Model {
 	* A person attending the event.
 	*/
 	//public Organization attendee;
+
+	/**
+	* The first broadcast date of the TV season or series.
+	*/
+	public Date startDate;
+
+	/**
+	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor.
+	*/
+	//public Person performer;
+
+	/**
+	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor.
+	*/
+	//public Organization performer;
 
 	/**
 	* The duration of the item (movie, audio recording, event, etc.) in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 date format</a>.
@@ -61,34 +74,9 @@ public class UserPlusOnes extends Model {
 	//public List<Organization> attendees;
 
 	/**
-	* Events that are a part of this event. For example, a conference event includes many presentations, each are subEvents of the conference.
+	* An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
 	*/
-	public Event subEvent;
-
-	/**
-	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor. (legacy spelling; see singular form, performer).
-	*/
-	//public List<Person> performers;
-
-	/**
-	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor. (legacy spelling; see singular form, performer).
-	*/
-	//public List<Organization> performers;
-
-	/**
-	* An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.
-	*/
-	public Event superEvent;
-
-	/**
-	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor.
-	*/
-	//public Person performer;
-
-	/**
-	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor.
-	*/
-	//public Organization performer;
+	public Offer offers;
 
 	/**
 	* Events that are a part of this event. For example, a conference event includes many presentations, each are subEvents of the conference. (legacy spelling; see singular form, subEvent).
@@ -96,14 +84,14 @@ public class UserPlusOnes extends Model {
 	public List<Event> subEvents;
 
 	/**
-	* No documentation available :-(
+	* Events that are a part of this event. For example, a conference event includes many presentations, each are subEvents of the conference.
 	*/
-	public String additionalType;
+	public Event subEvent;
 
 	/**
-	* A short description of the item.
+	* The end date and time of the event (in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 date format</a>).
 	*/
-	public String description;
+	public Date endDate;
 
 	/**
 	* URL of the item.
@@ -119,4 +107,14 @@ public class UserPlusOnes extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

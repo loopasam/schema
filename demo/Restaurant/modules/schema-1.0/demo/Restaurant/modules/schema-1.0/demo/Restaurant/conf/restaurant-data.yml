@@ -1,0 +1,39 @@
+# Test data
+
+PostalAddress(addressBrasserie):
+    streetAddress:          45, rue des Ours
+    postalCode:          75852
+    addressCountry:          FR
+    
+PostalAddress(addressPizzeria):
+    streetAddress:          16 N Ontario
+    postalCode:          60615
+    addressCountry:          USA
+    
+Restaurant(pizzeria):
+    name:          Gino's
+    openingHours:          Mo-Su
+    location:          addressPizzeria
+
+Restaurant(brasserie):
+    name:          Chez Pierre
+    openingHours:          Tu, We, Fr, Sa, Su
+    location:          addressBrasserie
+
+Review(reviewBrasserie1):
+    dateCreated:          2012-03-04
+    reviewBody:          The food was expensive but good
+    name:          A neat place
+    itemReviewed:           brasserie
+    
+Review(reviewPizzeria1):
+    dateCreated:          2011-06-30
+    reviewBody:          Pizza's amazing! I liked the quirky decor but the service was a bit slow. 
+    name:          I <3 deep-dish
+    itemReviewed:           pizzeria
+    
+Review(reviewPizzeria2):
+    dateCreated:          2010-12-11
+    reviewBody:          I was very disappointed, this is not pizza at all.
+    name:          :-(
+    itemReviewed:           pizzeria

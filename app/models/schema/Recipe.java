@@ -1,19 +1,37 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
 * A recipe.
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/Recipe
 */
-public class Recipe extends Model {
+public class Recipe {
+
+	/**
+	* Nutrition information about the recipe.
+	*/
+	public NutritionInformation nutrition;
+
+	/**
+	* The total time it takes to prepare and cook the recipe, in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 duration format</a>.
+	*/
+	public String totalTime;
 
 	/**
 	* The category of the recipe&mdash;for example, appetizer, entree, etc.
 	*/
 	public String recipeCategory;
+
+	/**
+	* The length of time it takes to prepare the recipe, in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 duration format</a>.
+	*/
+	public String prepTime;
+
+	/**
+	* The time it takes to actually cook the dish, in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 duration format</a>.
+	*/
+	public String cookTime;
 
 	/**
 	* The steps to make the dish.
@@ -26,14 +44,14 @@ public class Recipe extends Model {
 	public String recipeCuisine;
 
 	/**
+	* The quantity produced by the recipe (for example, number of people served, number of servings, etc).
+	*/
+	public String recipeYield;
+
+	/**
 	* An ingredient used in the recipe.
 	*/
 	public String ingredients;
-
-	/**
-	* The total time it takes to prepare and cook the recipe, in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 duration format</a>.
-	*/
-	public String totalTime;
 
 	/**
 	* The method of cooking, such as Frying, Steaming, ...
@@ -41,144 +59,24 @@ public class Recipe extends Model {
 	public String cookingMethod;
 
 	/**
-	* The quantity produced by the recipe (for example, number of people served, number of servings, etc).
+	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
 	*/
-	public String recipeYield;
+	public String interactionCount;
 
 	/**
-	* The time it takes to actually cook the dish, in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 duration format</a>.
+	* The location of the content.
 	*/
-	public String cookTime;
+	public Place contentLocation;
 
 	/**
-	* The length of time it takes to prepare the recipe, in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 duration format</a>.
-	*/
-	public String prepTime;
-
-	/**
-	* Nutrition information about the recipe.
-	*/
-	public NutritionInformation nutrition;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Person contributor;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Organization contributor;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String discussionUrl;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String thumbnailUrl;
-
-	/**
-	* Awards won by this person or for this creative work. (legacy spelling; see singular form, award).
-	*/
-	public List<String> awards;
-
-	/**
-	* Review of the item.
-	*/
-	public Review review;
-
-	/**
-	* No documentation available :-(
-	*/
-	public UserComments comment;
-
-	/**
-	* The overall rating, based on a collection of reviews or ratings, of the item.
-	*/
-	public AggregateRating aggregateRating;
-
-	/**
-	* The media objects that encode this creative work (legacy spelling; see singular form, encoding).
-	*/
-	public List<MediaObject> encodings;
-
-	/**
-	* Review of the item. (legacy spelling; see singular form, review).
-	*/
-	public List<Review> reviews;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Person creator;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Organization creator;
-
-	/**
-	* The keywords/tags used to describe this content.
-	*/
-	public String keywords;
-
-	/**
-	* Indicates whether this content is family friendly.
-	*/
-	public Boolean isFamilyFriendly;
-
-	/**
-	* An embeded video object or URL associated with the content.
-	*/
-	public VideoObject video;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Person accountablePerson;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Integer version;
-
-	/**
-	* An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
-	*/
-	public Offer offers;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public Date dateModified;
 
 	/**
-	* Genre of the creative work
+	* No documentation available
 	*/
-	public String genre;
-
-	/**
-	* No documentation available :-(
-	*/
-	public MediaObject associatedMedia;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Date dateCreated;
-
-	/**
-	* Official rating of a piece of content&mdash;for example,'MPAA PG-13'.
-	*/
-	public String contentRating;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Integer copyrightYear;
+	public Organization sourceOrganization;
 
 	/**
 	* The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangabely.
@@ -191,9 +89,9 @@ public class Recipe extends Model {
 	//public Organization author;
 
 	/**
-	* No documentation available :-(
+	* The publisher of the creative work.
 	*/
-	public String publishingPrinciples;
+	public Organization publisher;
 
 	/**
 	* Awards won by this person or for this creative work.
@@ -201,94 +99,9 @@ public class Recipe extends Model {
 	public String award;
 
 	/**
-	* No documentation available :-(
-	*/
-	public String alternativeHeadline;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Person copyrightHolder;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Organization copyrightHolder;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Audience audience;
-
-	/**
-	* The media objects that encode this creative work
-	*/
-	public MediaObject encoding;
-
-	/**
-	* The language of the content. please use one of the language codes from the <a href=http://tools.ietf.org/html/bcp47>IETF BCP 47 standard.</a>
-	*/
-	public String inLanguage;
-
-	/**
-	* The location of the content.
-	*/
-	public Place contentLocation;
-
-	/**
-	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
-	*/
-	public String interactionCount;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Thing mentions;
-
-	/**
 	* The subject matter of the content.
 	*/
 	public Thing about;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String text;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Person provider;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Organization provider;
-
-	/**
-	* Date of first broadcast/publication.
-	*/
-	public Date datePublished;
-
-	/**
-	* The publisher of the creative work.
-	*/
-	public Organization publisher;
-
-	/**
-	* Headline of the article
-	*/
-	public String headline;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Organization sourceOrganization;
-
-	/**
-	* An embeded audio object or URL associated with the content.
-	*/
-	public AudioObject audio;
 
 	/**
 	* Editor for this content.
@@ -296,14 +109,189 @@ public class Recipe extends Model {
 	public Person editor;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String additionalType;
+	public String publishingPrinciples;
 
 	/**
-	* A short description of the item.
+	* No documentation available
 	*/
-	public String description;
+	//public Person copyrightHolder;
+
+	/**
+	* No documentation available
+	*/
+	//public Organization copyrightHolder;
+
+	/**
+	* No documentation available
+	*/
+	public Integer version;
+
+	/**
+	* An embeded video object or URL associated with the content.
+	*/
+	public VideoObject video;
+
+	/**
+	* Indicates whether this content is family friendly.
+	*/
+	public Boolean isFamilyFriendly;
+
+	/**
+	* The language of the content. please use one of the language codes from the <a href=http://tools.ietf.org/html/bcp47>IETF BCP 47 standard.</a>
+	*/
+	public String inLanguage;
+
+	/**
+	* No documentation available
+	*/
+	public String thumbnailUrl;
+
+	/**
+	* No documentation available
+	*/
+	public String text;
+
+	/**
+	* The keywords/tags used to describe this content.
+	*/
+	public String keywords;
+
+	/**
+	* No documentation available
+	*/
+	public Date dateCreated;
+
+	/**
+	* No documentation available
+	*/
+	//public Person creator;
+
+	/**
+	* No documentation available
+	*/
+	//public Organization creator;
+
+	/**
+	* The media objects that encode this creative work
+	*/
+	public MediaObject encoding;
+
+	/**
+	* No documentation available
+	*/
+	public Integer copyrightYear;
+
+	/**
+	* No documentation available
+	*/
+	//public Person contributor;
+
+	/**
+	* No documentation available
+	*/
+	//public Organization contributor;
+
+	/**
+	* No documentation available
+	*/
+	public Audience audience;
+
+	/**
+	* No documentation available
+	*/
+	//public Person provider;
+
+	/**
+	* No documentation available
+	*/
+	//public Organization provider;
+
+	/**
+	* An embeded audio object or URL associated with the content.
+	*/
+	public AudioObject audio;
+
+	/**
+	* Official rating of a piece of content&mdash;for example,'MPAA PG-13'.
+	*/
+	public String contentRating;
+
+	/**
+	* The overall rating, based on a collection of reviews or ratings, of the item.
+	*/
+	public AggregateRating aggregateRating;
+
+	/**
+	* No documentation available
+	*/
+	public String alternativeHeadline;
+
+	/**
+	* No documentation available
+	*/
+	public UserComments comment;
+
+	/**
+	* Genre of the creative work
+	*/
+	public String genre;
+
+	/**
+	* Headline of the article
+	*/
+	public String headline;
+
+	/**
+	* Awards won by this person or for this creative work. (legacy spelling; see singular form, award).
+	*/
+	public List<String> awards;
+
+	/**
+	* No documentation available
+	*/
+	public Person accountablePerson;
+
+	/**
+	* Review of the item. (legacy spelling; see singular form, review).
+	*/
+	public List<Review> reviews;
+
+	/**
+	* No documentation available
+	*/
+	public Thing mentions;
+
+	/**
+	* An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
+	*/
+	public Offer offers;
+
+	/**
+	* Date of first broadcast/publication.
+	*/
+	public Date datePublished;
+
+	/**
+	* The media objects that encode this creative work (legacy spelling; see singular form, encoding).
+	*/
+	public List<MediaObject> encodings;
+
+	/**
+	* Review of the item.
+	*/
+	public Review review;
+
+	/**
+	* No documentation available
+	*/
+	public MediaObject associatedMedia;
+
+	/**
+	* No documentation available
+	*/
+	public String discussionUrl;
 
 	/**
 	* URL of the item.
@@ -319,4 +307,14 @@ public class Recipe extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

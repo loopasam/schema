@@ -1,74 +1,27 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
 * A dance group&mdash;for example, the Alvin Ailey Dance Theater or Riverdance.
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/DanceGroup
 */
-public class DanceGroup extends Model {
+public class DanceGroup {
 
 	/**
-	* People working for this organization. (legacy spelling; see singular form, employee).
+	* A contact point for a person or organization. (legacy spelling; see singular form, contactPoint).
 	*/
-	public List<Person> employees;
+	public List<ContactPoint> contactPoints;
 
 	/**
-	* Email address.
+	* The fax number.
 	*/
-	public String email;
+	public String faxNumber;
 
 	/**
-	* The overall rating, based on a collection of reviews or ratings, of the item.
+	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
 	*/
-	public AggregateRating aggregateRating;
-
-	/**
-	* Review of the item.
-	*/
-	public Review review;
-
-	/**
-	* A member of this organization.
-	*/
-	//public Person member;
-
-	/**
-	* A member of this organization.
-	*/
-	//public Organization member;
-
-	/**
-	* A contact point for a person or organization.
-	*/
-	public ContactPoint contactPoint;
-
-	/**
-	* A person who founded this organization.
-	*/
-	public Person founder;
-
-	/**
-	* Review of the item. (legacy spelling; see singular form, review).
-	*/
-	public List<Review> reviews;
-
-	/**
-	* A member of this organization. (legacy spelling; see singular form, member).
-	*/
-	//public List<Person> members;
-
-	/**
-	* A member of this organization. (legacy spelling; see singular form, member).
-	*/
-	//public List<Organization> members;
-
-	/**
-	* The events held at this place or organization.
-	*/
-	public Event event;
+	public String interactionCount;
 
 	/**
 	* The location of the event or organization.
@@ -81,39 +34,14 @@ public class DanceGroup extends Model {
 	//public Place location;
 
 	/**
-	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
+	* A person who founded this organization. (legacy spelling; see singular form, founder).
 	*/
-	public String interactionCount;
+	public List<Person> founders;
 
 	/**
-	* A contact point for a person or organization. (legacy spelling; see singular form, contactPoint).
+	* The events held at this place or organization.
 	*/
-	public List<ContactPoint> contactPoints;
-
-	/**
-	* The events held at this place or organization. (legacy spelling; see singular form, event).
-	*/
-	public List<Event> events;
-
-	/**
-	* The fax number.
-	*/
-	public String faxNumber;
-
-	/**
-	* Physical address of the item.
-	*/
-	public PostalAddress address;
-
-	/**
-	* People working for this organization.
-	*/
-	public Person employee;
-
-	/**
-	* The date that this organization was founded.
-	*/
-	public Date foundingDate;
+	public Event event;
 
 	/**
 	* The telephone number.
@@ -121,19 +49,79 @@ public class DanceGroup extends Model {
 	public String telephone;
 
 	/**
-	* A person who founded this organization. (legacy spelling; see singular form, founder).
+	* A member of this organization. (legacy spelling; see singular form, member).
 	*/
-	public List<Person> founders;
+	//public List<Person> members;
 
 	/**
-	* No documentation available :-(
+	* A member of this organization. (legacy spelling; see singular form, member).
 	*/
-	public String additionalType;
+	//public List<Organization> members;
 
 	/**
-	* A short description of the item.
+	* The date that this organization was founded.
 	*/
-	public String description;
+	public Date foundingDate;
+
+	/**
+	* The overall rating, based on a collection of reviews or ratings, of the item.
+	*/
+	public AggregateRating aggregateRating;
+
+	/**
+	* People working for this organization.
+	*/
+	public Person employee;
+
+	/**
+	* A member of this organization.
+	*/
+	//public Person member;
+
+	/**
+	* A member of this organization.
+	*/
+	//public Organization member;
+
+	/**
+	* Physical address of the item.
+	*/
+	public PostalAddress address;
+
+	/**
+	* People working for this organization. (legacy spelling; see singular form, employee).
+	*/
+	public List<Person> employees;
+
+	/**
+	* Review of the item. (legacy spelling; see singular form, review).
+	*/
+	public List<Review> reviews;
+
+	/**
+	* A contact point for a person or organization.
+	*/
+	public ContactPoint contactPoint;
+
+	/**
+	* A person who founded this organization.
+	*/
+	public Person founder;
+
+	/**
+	* Email address.
+	*/
+	public String email;
+
+	/**
+	* The events held at this place or organization. (legacy spelling; see singular form, event).
+	*/
+	public List<Event> events;
+
+	/**
+	* Review of the item.
+	*/
+	public Review review;
 
 	/**
 	* URL of the item.
@@ -149,4 +137,14 @@ public class DanceGroup extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

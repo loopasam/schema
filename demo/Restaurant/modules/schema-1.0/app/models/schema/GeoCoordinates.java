@@ -1,24 +1,12 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
 * The geographic coordinates of a place or event.
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/GeoCoordinates
 */
-public class GeoCoordinates extends Model {
-
-	/**
-	* The latitude of a location. For example <code>37.42242</code>.
-	*/
-	//public Integer latitude;
-
-	/**
-	* The latitude of a location. For example <code>37.42242</code>.
-	*/
-	//public String latitude;
+public class GeoCoordinates {
 
 	/**
 	* The elevation of a location.
@@ -41,14 +29,14 @@ public class GeoCoordinates extends Model {
 	//public String longitude;
 
 	/**
-	* No documentation available :-(
+	* The latitude of a location. For example <code>37.42242</code>.
 	*/
-	public String additionalType;
+	//public Integer latitude;
 
 	/**
-	* A short description of the item.
+	* The latitude of a location. For example <code>37.42242</code>.
 	*/
-	public String description;
+	//public String latitude;
 
 	/**
 	* URL of the item.
@@ -64,4 +52,14 @@ public class GeoCoordinates extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

@@ -1,24 +1,12 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
-* No documentation available :-(
+* No documentation available
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/Specialty
 */
-public class Specialty extends Model {
-
-	/**
-	* No documentation available :-(
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
+public class Specialty {
 
 	/**
 	* URL of the item.
@@ -34,4 +22,14 @@ public class Specialty extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

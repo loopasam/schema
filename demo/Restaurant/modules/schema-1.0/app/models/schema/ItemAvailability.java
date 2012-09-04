@@ -1,24 +1,12 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
 * A list of possible product availablity options.
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/ItemAvailability
 */
-public class ItemAvailability extends Model {
-
-	/**
-	* No documentation available :-(
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
+public class ItemAvailability {
 
 	/**
 	* URL of the item.
@@ -34,4 +22,14 @@ public class ItemAvailability extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

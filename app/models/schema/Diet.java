@@ -1,299 +1,112 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
-* No documentation available :-(
+* No documentation available
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/Diet
 */
-public class Diet extends Model {
+public class Diet {
 
 	/**
-	* No documentation available :-(
-	*/
-	public String risks;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String dietFeatures;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public String physiologicalBenefits;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public String expertConsiderations;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	//public Person endorsers;
+	public String dietFeatures;
 
 	/**
-	* No documentation available :-(
-	*/
-	//public Organization endorsers;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String proprietaryName;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public String overview;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	//public Person contributor;
+	public String proprietaryName;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	//public Organization contributor;
+	//public Person endorsers;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String discussionUrl;
+	//public Organization endorsers;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String thumbnailUrl;
+	public String risks;
 
 	/**
-	* Awards won by this person or for this creative work. (legacy spelling; see singular form, award).
+	* No documentation available
 	*/
-	public List<String> awards;
+	public MedicalIndication indication;
 
 	/**
-	* Review of the item.
+	* No documentation available
 	*/
-	public Review review;
+	public MedicalEntity seriousAdverseOutcome;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public UserComments comment;
+	public MedicalContraindication contraindication;
 
 	/**
-	* The overall rating, based on a collection of reviews or ratings, of the item.
+	* No documentation available
 	*/
-	public AggregateRating aggregateRating;
+	public MedicalEntity adverseOutcome;
 
 	/**
-	* The media objects that encode this creative work (legacy spelling; see singular form, encoding).
+	* No documentation available
 	*/
-	public List<MediaObject> encodings;
+	public MedicalTherapy duplicateTherapy;
 
 	/**
-	* Review of the item. (legacy spelling; see singular form, review).
+	* No documentation available
 	*/
-	public List<Review> reviews;
+	public MedicalSpecialty relevantSpecialty;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	//public Person creator;
+	public MedicalStudy study;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	//public Organization creator;
+	public MedicineSystem medicineSystem;
 
 	/**
-	* The keywords/tags used to describe this content.
+	* No documentation available
 	*/
-	public String keywords;
+	public Organization recognizingAuthority;
 
 	/**
-	* Indicates whether this content is family friendly.
+	* No documentation available
 	*/
-	public Boolean isFamilyFriendly;
+	public MedicalCode code;
 
 	/**
-	* An embeded video object or URL associated with the content.
+	* No documentation available
 	*/
-	public VideoObject video;
+	public MedicalGuideline guideline;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public Person accountablePerson;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Integer version;
-
-	/**
-	* An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
-	*/
-	public Offer offers;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Date dateModified;
-
-	/**
-	* Genre of the creative work
-	*/
-	public String genre;
-
-	/**
-	* No documentation available :-(
-	*/
-	public MediaObject associatedMedia;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Date dateCreated;
-
-	/**
-	* Official rating of a piece of content&mdash;for example,'MPAA PG-13'.
-	*/
-	public String contentRating;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Integer copyrightYear;
-
-	/**
-	* The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangabely.
-	*/
-	//public Person author;
-
-	/**
-	* The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangabely.
-	*/
-	//public Organization author;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String publishingPrinciples;
-
-	/**
-	* Awards won by this person or for this creative work.
-	*/
-	public String award;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String alternativeHeadline;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Person copyrightHolder;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Organization copyrightHolder;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Audience audience;
-
-	/**
-	* The media objects that encode this creative work
-	*/
-	public MediaObject encoding;
-
-	/**
-	* The language of the content. please use one of the language codes from the <a href=http://tools.ietf.org/html/bcp47>IETF BCP 47 standard.</a>
-	*/
-	public String inLanguage;
-
-	/**
-	* The location of the content.
-	*/
-	public Place contentLocation;
-
-	/**
-	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
-	*/
-	public String interactionCount;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Thing mentions;
-
-	/**
-	* The subject matter of the content.
-	*/
-	public Thing about;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String text;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Person provider;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Organization provider;
-
-	/**
-	* Date of first broadcast/publication.
-	*/
-	public Date datePublished;
-
-	/**
-	* The publisher of the creative work.
-	*/
-	public Organization publisher;
-
-	/**
-	* Headline of the article
-	*/
-	public String headline;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Organization sourceOrganization;
-
-	/**
-	* An embeded audio object or URL associated with the content.
-	*/
-	public AudioObject audio;
-
-	/**
-	* Editor for this content.
-	*/
-	public Person editor;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
+	public String alternateName;
 
 	/**
 	* URL of the item.
@@ -311,62 +124,247 @@ public class Diet extends Model {
 	public String name;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalEntity seriousAdverseOutcome;
+	public String additionalType;
 
 	/**
-	* No documentation available :-(
+	* A short description of the item.
 	*/
-	public MedicalIndication indication;
+	public String description;
 
 	/**
-	* No documentation available :-(
+	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
 	*/
-	public MedicalTherapy duplicateTherapy;
+	public String interactionCount;
 
 	/**
-	* No documentation available :-(
+	* The location of the content.
 	*/
-	public MedicalEntity adverseOutcome;
+	public Place contentLocation;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalContraindication contraindication;
+	public Date dateModified;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String alternateName;
+	public Organization sourceOrganization;
 
 	/**
-	* No documentation available :-(
+	* The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangabely.
 	*/
-	public MedicalGuideline guideline;
+	//public Person author;
 
 	/**
-	* No documentation available :-(
+	* The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangabely.
 	*/
-	public MedicalStudy study;
+	//public Organization author;
 
 	/**
-	* No documentation available :-(
+	* The publisher of the creative work.
 	*/
-	public MedicalSpecialty relevantSpecialty;
+	public Organization publisher;
 
 	/**
-	* No documentation available :-(
+	* Awards won by this person or for this creative work.
 	*/
-	public Organization recognizingAuthority;
+	public String award;
 
 	/**
-	* No documentation available :-(
+	* The subject matter of the content.
 	*/
-	public MedicineSystem medicineSystem;
+	public Thing about;
 
 	/**
-	* No documentation available :-(
+	* Editor for this content.
 	*/
-	public MedicalCode code;
+	public Person editor;
+
+	/**
+	* No documentation available
+	*/
+	public String publishingPrinciples;
+
+	/**
+	* No documentation available
+	*/
+	//public Person copyrightHolder;
+
+	/**
+	* No documentation available
+	*/
+	//public Organization copyrightHolder;
+
+	/**
+	* No documentation available
+	*/
+	public Integer version;
+
+	/**
+	* An embeded video object or URL associated with the content.
+	*/
+	public VideoObject video;
+
+	/**
+	* Indicates whether this content is family friendly.
+	*/
+	public Boolean isFamilyFriendly;
+
+	/**
+	* The language of the content. please use one of the language codes from the <a href=http://tools.ietf.org/html/bcp47>IETF BCP 47 standard.</a>
+	*/
+	public String inLanguage;
+
+	/**
+	* No documentation available
+	*/
+	public String thumbnailUrl;
+
+	/**
+	* No documentation available
+	*/
+	public String text;
+
+	/**
+	* The keywords/tags used to describe this content.
+	*/
+	public String keywords;
+
+	/**
+	* No documentation available
+	*/
+	public Date dateCreated;
+
+	/**
+	* No documentation available
+	*/
+	//public Person creator;
+
+	/**
+	* No documentation available
+	*/
+	//public Organization creator;
+
+	/**
+	* The media objects that encode this creative work
+	*/
+	public MediaObject encoding;
+
+	/**
+	* No documentation available
+	*/
+	public Integer copyrightYear;
+
+	/**
+	* No documentation available
+	*/
+	//public Person contributor;
+
+	/**
+	* No documentation available
+	*/
+	//public Organization contributor;
+
+	/**
+	* No documentation available
+	*/
+	public Audience audience;
+
+	/**
+	* No documentation available
+	*/
+	//public Person provider;
+
+	/**
+	* No documentation available
+	*/
+	//public Organization provider;
+
+	/**
+	* An embeded audio object or URL associated with the content.
+	*/
+	public AudioObject audio;
+
+	/**
+	* Official rating of a piece of content&mdash;for example,'MPAA PG-13'.
+	*/
+	public String contentRating;
+
+	/**
+	* The overall rating, based on a collection of reviews or ratings, of the item.
+	*/
+	public AggregateRating aggregateRating;
+
+	/**
+	* No documentation available
+	*/
+	public String alternativeHeadline;
+
+	/**
+	* No documentation available
+	*/
+	public UserComments comment;
+
+	/**
+	* Genre of the creative work
+	*/
+	public String genre;
+
+	/**
+	* Headline of the article
+	*/
+	public String headline;
+
+	/**
+	* Awards won by this person or for this creative work. (legacy spelling; see singular form, award).
+	*/
+	public List<String> awards;
+
+	/**
+	* No documentation available
+	*/
+	public Person accountablePerson;
+
+	/**
+	* Review of the item. (legacy spelling; see singular form, review).
+	*/
+	public List<Review> reviews;
+
+	/**
+	* No documentation available
+	*/
+	public Thing mentions;
+
+	/**
+	* An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
+	*/
+	public Offer offers;
+
+	/**
+	* Date of first broadcast/publication.
+	*/
+	public Date datePublished;
+
+	/**
+	* The media objects that encode this creative work (legacy spelling; see singular form, encoding).
+	*/
+	public List<MediaObject> encodings;
+
+	/**
+	* Review of the item.
+	*/
+	public Review review;
+
+	/**
+	* No documentation available
+	*/
+	public MediaObject associatedMedia;
+
+	/**
+	* No documentation available
+	*/
+	public String discussionUrl;
 }

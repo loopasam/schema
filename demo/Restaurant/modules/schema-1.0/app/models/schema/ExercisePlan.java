@@ -1,154 +1,142 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
-* No documentation available :-(
+* No documentation available
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/ExercisePlan
 */
-public class ExercisePlan extends Model {
+public class ExercisePlan {
 
 	/**
-	* No documentation available :-(
-	*/
-	public String exerciseType;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String activityFrequency;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String activityDuration;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Energy workload;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String intensity;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String additionalVariable;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public String restPeriods;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public String activityFrequency;
+
+	/**
+	* No documentation available
+	*/
+	public String intensity;
+
+	/**
+	* No documentation available
 	*/
 	public Integer repetitions;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public String additionalVariable;
+
+	/**
+	* No documentation available
+	*/
+	public Energy workload;
+
+	/**
+	* No documentation available
+	*/
+	public String exerciseType;
+
+	/**
+	* No documentation available
+	*/
+	public String activityDuration;
+
+	/**
+	* No documentation available
 	*/
 	public String pathophysiology;
 
 	/**
-	* No documentation available :-(
-	*/
-	public PhysicalActivityCategory category;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String epidemiology;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public AnatomicalStructure associatedAnatomy;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public SuperficialAnatomy associatedAnatomy;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	//public AnatomicalSystem associatedAnatomy;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalEntity seriousAdverseOutcome;
+	//public SuperficialAnatomy associatedAnatomy;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	//public AnatomicalStructure associatedAnatomy;
+
+	/**
+	* No documentation available
+	*/
+	public String epidemiology;
+
+	/**
+	* No documentation available
+	*/
+	public PhysicalActivityCategory category;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalIndication indication;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalTherapy duplicateTherapy;
+	public MedicalEntity seriousAdverseOutcome;
 
 	/**
-	* No documentation available :-(
-	*/
-	public MedicalEntity adverseOutcome;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalContraindication contraindication;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String alternateName;
+	public MedicalEntity adverseOutcome;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalGuideline guideline;
+	public MedicalTherapy duplicateTherapy;
 
 	/**
-	* No documentation available :-(
-	*/
-	public MedicalStudy study;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public Organization recognizingAuthority;
+	public MedicalStudy study;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicineSystem medicineSystem;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalCode code;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String additionalType;
+	public MedicalGuideline guideline;
 
 	/**
-	* A short description of the item.
+	* No documentation available
 	*/
-	public String description;
+	public String alternateName;
 
 	/**
 	* URL of the item.
@@ -166,124 +154,34 @@ public class ExercisePlan extends Model {
 	public String name;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	//public Person contributor;
+	public String additionalType;
 
 	/**
-	* No documentation available :-(
+	* A short description of the item.
 	*/
-	//public Organization contributor;
+	public String description;
 
 	/**
-	* No documentation available :-(
+	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
 	*/
-	public String discussionUrl;
+	public String interactionCount;
 
 	/**
-	* No documentation available :-(
+	* The location of the content.
 	*/
-	public String thumbnailUrl;
+	public Place contentLocation;
 
 	/**
-	* Awards won by this person or for this creative work. (legacy spelling; see singular form, award).
-	*/
-	public List<String> awards;
-
-	/**
-	* Review of the item.
-	*/
-	public Review review;
-
-	/**
-	* No documentation available :-(
-	*/
-	public UserComments comment;
-
-	/**
-	* The overall rating, based on a collection of reviews or ratings, of the item.
-	*/
-	public AggregateRating aggregateRating;
-
-	/**
-	* The media objects that encode this creative work (legacy spelling; see singular form, encoding).
-	*/
-	public List<MediaObject> encodings;
-
-	/**
-	* Review of the item. (legacy spelling; see singular form, review).
-	*/
-	public List<Review> reviews;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Person creator;
-
-	/**
-	* No documentation available :-(
-	*/
-	//public Organization creator;
-
-	/**
-	* The keywords/tags used to describe this content.
-	*/
-	public String keywords;
-
-	/**
-	* Indicates whether this content is family friendly.
-	*/
-	public Boolean isFamilyFriendly;
-
-	/**
-	* An embeded video object or URL associated with the content.
-	*/
-	public VideoObject video;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Person accountablePerson;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Integer version;
-
-	/**
-	* An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
-	*/
-	public Offer offers;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public Date dateModified;
 
 	/**
-	* Genre of the creative work
+	* No documentation available
 	*/
-	public String genre;
-
-	/**
-	* No documentation available :-(
-	*/
-	public MediaObject associatedMedia;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Date dateCreated;
-
-	/**
-	* Official rating of a piece of content&mdash;for example,'MPAA PG-13'.
-	*/
-	public String contentRating;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Integer copyrightYear;
+	public Organization sourceOrganization;
 
 	/**
 	* The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangabely.
@@ -296,9 +194,9 @@ public class ExercisePlan extends Model {
 	//public Organization author;
 
 	/**
-	* No documentation available :-(
+	* The publisher of the creative work.
 	*/
-	public String publishingPrinciples;
+	public Organization publisher;
 
 	/**
 	* Awards won by this person or for this creative work.
@@ -306,29 +204,44 @@ public class ExercisePlan extends Model {
 	public String award;
 
 	/**
-	* No documentation available :-(
+	* The subject matter of the content.
 	*/
-	public String alternativeHeadline;
+	public Thing about;
 
 	/**
-	* No documentation available :-(
+	* Editor for this content.
+	*/
+	public Person editor;
+
+	/**
+	* No documentation available
+	*/
+	public String publishingPrinciples;
+
+	/**
+	* No documentation available
 	*/
 	//public Person copyrightHolder;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	//public Organization copyrightHolder;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public Audience audience;
+	public Integer version;
 
 	/**
-	* The media objects that encode this creative work
+	* An embeded video object or URL associated with the content.
 	*/
-	public MediaObject encoding;
+	public VideoObject video;
+
+	/**
+	* Indicates whether this content is family friendly.
+	*/
+	public Boolean isFamilyFriendly;
 
 	/**
 	* The language of the content. please use one of the language codes from the <a href=http://tools.ietf.org/html/bcp47>IETF BCP 47 standard.</a>
@@ -336,59 +249,69 @@ public class ExercisePlan extends Model {
 	public String inLanguage;
 
 	/**
-	* The location of the content.
+	* No documentation available
 	*/
-	public Place contentLocation;
+	public String thumbnailUrl;
 
 	/**
-	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
-	*/
-	public String interactionCount;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Thing mentions;
-
-	/**
-	* The subject matter of the content.
-	*/
-	public Thing about;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public String text;
 
 	/**
-	* No documentation available :-(
+	* The keywords/tags used to describe this content.
+	*/
+	public String keywords;
+
+	/**
+	* No documentation available
+	*/
+	public Date dateCreated;
+
+	/**
+	* No documentation available
+	*/
+	//public Person creator;
+
+	/**
+	* No documentation available
+	*/
+	//public Organization creator;
+
+	/**
+	* The media objects that encode this creative work
+	*/
+	public MediaObject encoding;
+
+	/**
+	* No documentation available
+	*/
+	public Integer copyrightYear;
+
+	/**
+	* No documentation available
+	*/
+	//public Person contributor;
+
+	/**
+	* No documentation available
+	*/
+	//public Organization contributor;
+
+	/**
+	* No documentation available
+	*/
+	public Audience audience;
+
+	/**
+	* No documentation available
 	*/
 	//public Person provider;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	//public Organization provider;
-
-	/**
-	* Date of first broadcast/publication.
-	*/
-	public Date datePublished;
-
-	/**
-	* The publisher of the creative work.
-	*/
-	public Organization publisher;
-
-	/**
-	* Headline of the article
-	*/
-	public String headline;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Organization sourceOrganization;
 
 	/**
 	* An embeded audio object or URL associated with the content.
@@ -396,7 +319,82 @@ public class ExercisePlan extends Model {
 	public AudioObject audio;
 
 	/**
-	* Editor for this content.
+	* Official rating of a piece of content&mdash;for example,'MPAA PG-13'.
 	*/
-	public Person editor;
+	public String contentRating;
+
+	/**
+	* The overall rating, based on a collection of reviews or ratings, of the item.
+	*/
+	public AggregateRating aggregateRating;
+
+	/**
+	* No documentation available
+	*/
+	public String alternativeHeadline;
+
+	/**
+	* No documentation available
+	*/
+	public UserComments comment;
+
+	/**
+	* Genre of the creative work
+	*/
+	public String genre;
+
+	/**
+	* Headline of the article
+	*/
+	public String headline;
+
+	/**
+	* Awards won by this person or for this creative work. (legacy spelling; see singular form, award).
+	*/
+	public List<String> awards;
+
+	/**
+	* No documentation available
+	*/
+	public Person accountablePerson;
+
+	/**
+	* Review of the item. (legacy spelling; see singular form, review).
+	*/
+	public List<Review> reviews;
+
+	/**
+	* No documentation available
+	*/
+	public Thing mentions;
+
+	/**
+	* An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
+	*/
+	public Offer offers;
+
+	/**
+	* Date of first broadcast/publication.
+	*/
+	public Date datePublished;
+
+	/**
+	* The media objects that encode this creative work (legacy spelling; see singular form, encoding).
+	*/
+	public List<MediaObject> encodings;
+
+	/**
+	* Review of the item.
+	*/
+	public Review review;
+
+	/**
+	* No documentation available
+	*/
+	public MediaObject associatedMedia;
+
+	/**
+	* No documentation available
+	*/
+	public String discussionUrl;
 }

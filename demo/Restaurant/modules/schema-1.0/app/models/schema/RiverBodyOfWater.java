@@ -1,14 +1,32 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
 * A river (for example, the broad majestic Shannon).
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/RiverBodyOfWater
 */
-public class RiverBodyOfWater extends Model {
+public class RiverBodyOfWater {
+
+	/**
+	* The basic containment relation between places.
+	*/
+	public Place containedIn;
+
+	/**
+	* The fax number.
+	*/
+	public String faxNumber;
+
+	/**
+	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
+	*/
+	public String interactionCount;
+
+	/**
+	* The events held at this place or organization.
+	*/
+	public Event event;
 
 	/**
 	* A URL to a map of the place.
@@ -16,14 +34,19 @@ public class RiverBodyOfWater extends Model {
 	public String map;
 
 	/**
+	* The telephone number.
+	*/
+	public String telephone;
+
+	/**
 	* The overall rating, based on a collection of reviews or ratings, of the item.
 	*/
 	public AggregateRating aggregateRating;
 
 	/**
-	* Review of the item.
+	* A URL to a map of the place. (legacy spelling; see singular form, map).
 	*/
-	public Review review;
+	public List<String> maps;
 
 	/**
 	* Photographs of this place.
@@ -36,44 +59,14 @@ public class RiverBodyOfWater extends Model {
 	//public ImageObject photo;
 
 	/**
+	* Physical address of the item.
+	*/
+	public PostalAddress address;
+
+	/**
 	* Review of the item. (legacy spelling; see singular form, review).
 	*/
 	public List<Review> reviews;
-
-	/**
-	* The events held at this place or organization.
-	*/
-	public Event event;
-
-	/**
-	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
-	*/
-	public String interactionCount;
-
-	/**
-	* The basic containment relation between places.
-	*/
-	public Place containedIn;
-
-	/**
-	* Photographs of this place. (legacy spelling; see singular form, photo).
-	*/
-	//public List<Photograph> photos;
-
-	/**
-	* Photographs of this place. (legacy spelling; see singular form, photo).
-	*/
-	//public List<ImageObject> photos;
-
-	/**
-	* The events held at this place or organization. (legacy spelling; see singular form, event).
-	*/
-	public List<Event> events;
-
-	/**
-	* The fax number.
-	*/
-	public String faxNumber;
 
 	/**
 	* The geo coordinates of the place.
@@ -86,29 +79,24 @@ public class RiverBodyOfWater extends Model {
 	//public GeoCoordinates geo;
 
 	/**
-	* Physical address of the item.
+	* The events held at this place or organization. (legacy spelling; see singular form, event).
 	*/
-	public PostalAddress address;
+	public List<Event> events;
 
 	/**
-	* A URL to a map of the place. (legacy spelling; see singular form, map).
+	* Photographs of this place. (legacy spelling; see singular form, photo).
 	*/
-	public List<String> maps;
+	//public List<Photograph> photos;
 
 	/**
-	* The telephone number.
+	* Photographs of this place. (legacy spelling; see singular form, photo).
 	*/
-	public String telephone;
+	//public List<ImageObject> photos;
 
 	/**
-	* No documentation available :-(
+	* Review of the item.
 	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
+	public Review review;
 
 	/**
 	* URL of the item.
@@ -124,4 +112,14 @@ public class RiverBodyOfWater extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

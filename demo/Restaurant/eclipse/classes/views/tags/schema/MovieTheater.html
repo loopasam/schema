@@ -1,198 +1,198 @@
-*{The opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.<br />- Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.<br />- Times are specified using 24:00 time. For example, 3pm is specified as <code>15:00</code>.<br />Here is an example: <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>}*
-<time itemprop="openingHours" datetime="${_arg.openingHours}">${_arg.openingHours}</time>
+	*{The opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.<br />- Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.<br />- Times are specified using 24:00 time. For example, 3pm is specified as <code>15:00</code>.<br />Here is an example: <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>}*
+	<time itemprop="openingHours" datetime="${_arg.openingHours}">${_arg.openingHours}</time>
 
-*{A URL to a map of the place.}*
-<span itemprop="map">${_arg.map}</span>
+	*{The basic containment relation between places.}*
+	<div itemprop="containedIn" itemscope itemtype="http://schema.org/Place">
+		#{Place _arg.containedIn /}
+	</div>
 
-*{The overall rating, based on a collection of reviews or ratings, of the item.}*
-<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-	#{AggregateRating _arg.aggregateRating /}
-</div>
+	*{The fax number.}*
+	<span itemprop="faxNumber">${_arg.faxNumber}</span>
 
-*{Review of the item.}*
-<div itemprop="review" itemscope itemtype="http://schema.org/Review">
-	#{Review _arg.review /}
-</div>
+	*{A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.}*
+	<span itemprop="interactionCount">${_arg.interactionCount}</span>
 
-*{Photographs of this place.}*
-<div itemprop="photo" itemscope itemtype="http://schema.org/Photograph">
-	#{Photograph _arg.photo /}
-</div>
+	*{The events held at this place or organization.}*
+	<div itemprop="event" itemscope itemtype="http://schema.org/Event">
+		#{Event _arg.event /}
+	</div>
 
-*{Photographs of this place.}*
-<div itemprop="photo" itemscope itemtype="http://schema.org/ImageObject">
-	#{ImageObject _arg.photo /}
-</div>
+	*{A URL to a map of the place.}*
+	<span itemprop="map">${_arg.map}</span>
 
-*{Review of the item. (legacy spelling; see singular form, review).}*
-#{list items:_arg.reviews, as:'review'}
-<div itemprop="review" itemscope itemtype="http://schema.org/Review">
-	#{Review review /}
-</div>
-#{/list}
+	*{The telephone number.}*
+	<span itemprop="telephone">${_arg.telephone}</span>
 
-*{The events held at this place or organization.}*
-<div itemprop="event" itemscope itemtype="http://schema.org/Event">
-	#{Event _arg.event /}
-</div>
+	*{The overall rating, based on a collection of reviews or ratings, of the item.}*
+	<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+		#{AggregateRating _arg.aggregateRating /}
+	</div>
 
-*{A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.}*
-<span itemprop="interactionCount">${_arg.interactionCount}</span>
+	*{A URL to a map of the place. (legacy spelling; see singular form, map).}*
+	#{list items:_arg.maps, as:'map'}
+	<span itemprop="map">${map}</span>
+	#{/list}
 
-*{The basic containment relation between places.}*
-<div itemprop="containedIn" itemscope itemtype="http://schema.org/Place">
-	#{Place _arg.containedIn /}
-</div>
+	*{Photographs of this place.}*
+	<div itemprop="photo" itemscope itemtype="http://schema.org/Photograph">
+		#{Photograph _arg.photo /}
+	</div>
 
-*{Photographs of this place. (legacy spelling; see singular form, photo).}*
-#{list items:_arg.photos, as:'photo'}
-<div itemprop="photo" itemscope itemtype="http://schema.org/Photograph">
-	#{Photograph photo /}
-</div>
-#{/list}
+	*{Photographs of this place.}*
+	<div itemprop="photo" itemscope itemtype="http://schema.org/ImageObject">
+		#{ImageObject _arg.photo /}
+	</div>
 
-*{Photographs of this place. (legacy spelling; see singular form, photo).}*
-#{list items:_arg.photos, as:'photo'}
-<div itemprop="photo" itemscope itemtype="http://schema.org/ImageObject">
-	#{ImageObject photo /}
-</div>
-#{/list}
+	*{Physical address of the item.}*
+	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		#{PostalAddress _arg.address /}
+	</div>
 
-*{The events held at this place or organization. (legacy spelling; see singular form, event).}*
-#{list items:_arg.events, as:'event'}
-<div itemprop="event" itemscope itemtype="http://schema.org/Event">
-	#{Event event /}
-</div>
-#{/list}
+	*{Review of the item. (legacy spelling; see singular form, review).}*
+	#{list items:_arg.reviews, as:'review'}
+	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
+		#{Review review /}
+	</div>
+	#{/list}
 
-*{The fax number.}*
-<span itemprop="faxNumber">${_arg.faxNumber}</span>
+	*{The geo coordinates of the place.}*
+	<div itemprop="geo" itemscope itemtype="http://schema.org/GeoShape">
+		#{GeoShape _arg.geo /}
+	</div>
 
-*{The geo coordinates of the place.}*
-<div itemprop="geo" itemscope itemtype="http://schema.org/GeoShape">
-	#{GeoShape _arg.geo /}
-</div>
+	*{The geo coordinates of the place.}*
+	<div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+		#{GeoCoordinates _arg.geo /}
+	</div>
 
-*{The geo coordinates of the place.}*
-<div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-	#{GeoCoordinates _arg.geo /}
-</div>
+	*{The events held at this place or organization. (legacy spelling; see singular form, event).}*
+	#{list items:_arg.events, as:'event'}
+	<div itemprop="event" itemscope itemtype="http://schema.org/Event">
+		#{Event event /}
+	</div>
+	#{/list}
 
-*{Physical address of the item.}*
-<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-	#{PostalAddress _arg.address /}
-</div>
+	*{Photographs of this place. (legacy spelling; see singular form, photo).}*
+	#{list items:_arg.photos, as:'photo'}
+	<div itemprop="photo" itemscope itemtype="http://schema.org/Photograph">
+		#{Photograph photo /}
+	</div>
+	#{/list}
 
-*{A URL to a map of the place. (legacy spelling; see singular form, map).}*
-#{list items:_arg.maps, as:'map'}
-<span itemprop="map">${map}</span>
-#{/list}
+	*{Photographs of this place. (legacy spelling; see singular form, photo).}*
+	#{list items:_arg.photos, as:'photo'}
+	<div itemprop="photo" itemscope itemtype="http://schema.org/ImageObject">
+		#{ImageObject photo /}
+	</div>
+	#{/list}
 
-*{The telephone number.}*
-<span itemprop="telephone">${_arg.telephone}</span>
+	*{Review of the item.}*
+	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
+		#{Review _arg.review /}
+	</div>
 
-*{No documentation available :-(}*
-<span itemprop="additionalType">${_arg.additionalType}</span>
+	*{URL of the item.}*
+	<span itemprop="url">${_arg.url}</span>
 
-*{A short description of the item.}*
-<span itemprop="description">${_arg.description}</span>
+	*{URL of an image of the item.}*
+	<span itemprop="image">${_arg.image}</span>
 
-*{URL of the item.}*
-<span itemprop="url">${_arg.url}</span>
+	*{The name of the item.}*
+	<span itemprop="name">${_arg.name}</span>
 
-*{URL of an image of the item.}*
-<span itemprop="image">${_arg.image}</span>
+	*{No documentation available}*
+	<span itemprop="additionalType">${_arg.additionalType}</span>
 
-*{The name of the item.}*
-<span itemprop="name">${_arg.name}</span>
+	*{A short description of the item.}*
+	<span itemprop="description">${_arg.description}</span>
 
-*{The price range of the business, for example <code>$$$</code>.}*
-<span itemprop="priceRange">${_arg.priceRange}</span>
+	*{The larger organization that this local business is a branch of, if any.}*
+	<div itemprop="branchOf" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.branchOf /}
+	</div>
 
-*{Cash, credit card, etc.}*
-<span itemprop="paymentAccepted">${_arg.paymentAccepted}</span>
+	*{The price range of the business, for example <code>$$$</code>.}*
+	<span itemprop="priceRange">${_arg.priceRange}</span>
 
-*{The currency accepted (in <a href="http://en.wikipedia.org/wiki/ISO_4217" target="new">ISO 4217 currency format</a>).}*
-<span itemprop="currenciesAccepted">${_arg.currenciesAccepted}</span>
+	*{Cash, credit card, etc.}*
+	<span itemprop="paymentAccepted">${_arg.paymentAccepted}</span>
 
-*{The larger organization that this local business is a branch of, if any.}*
-<div itemprop="branchOf" itemscope itemtype="http://schema.org/Organization">
-	#{Organization _arg.branchOf /}
-</div>
+	*{The currency accepted (in <a href="http://en.wikipedia.org/wiki/ISO_4217" target="new">ISO 4217 currency format</a>).}*
+	<span itemprop="currenciesAccepted">${_arg.currenciesAccepted}</span>
 
-*{People working for this organization. (legacy spelling; see singular form, employee).}*
-#{list items:_arg.employees, as:'employee'}
-<div itemprop="employee" itemscope itemtype="http://schema.org/Person">
-	#{Person employee /}
-</div>
-#{/list}
+	*{A contact point for a person or organization. (legacy spelling; see singular form, contactPoint).}*
+	#{list items:_arg.contactPoints, as:'contactPoint'}
+	<div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+		#{ContactPoint contactPoint /}
+	</div>
+	#{/list}
 
-*{Email address.}*
-<span itemprop="email">${_arg.email}</span>
+	*{The location of the event or organization.}*
+	<div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+		#{PostalAddress _arg.location /}
+	</div>
 
-*{A member of this organization.}*
-<div itemprop="member" itemscope itemtype="http://schema.org/Person">
-	#{Person _arg.member /}
-</div>
+	*{The location of the event or organization.}*
+	<div itemprop="location" itemscope itemtype="http://schema.org/Place">
+		#{Place _arg.location /}
+	</div>
 
-*{A member of this organization.}*
-<div itemprop="member" itemscope itemtype="http://schema.org/Organization">
-	#{Organization _arg.member /}
-</div>
+	*{A person who founded this organization. (legacy spelling; see singular form, founder).}*
+	#{list items:_arg.founders, as:'founder'}
+	<div itemprop="founder" itemscope itemtype="http://schema.org/Person">
+		#{Person founder /}
+	</div>
+	#{/list}
 
-*{A contact point for a person or organization.}*
-<div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
-	#{ContactPoint _arg.contactPoint /}
-</div>
+	*{A member of this organization. (legacy spelling; see singular form, member).}*
+	#{list items:_arg.members, as:'member'}
+	<div itemprop="member" itemscope itemtype="http://schema.org/Person">
+		#{Person member /}
+	</div>
+	#{/list}
 
-*{A person who founded this organization.}*
-<div itemprop="founder" itemscope itemtype="http://schema.org/Person">
-	#{Person _arg.founder /}
-</div>
+	*{A member of this organization. (legacy spelling; see singular form, member).}*
+	#{list items:_arg.members, as:'member'}
+	<div itemprop="member" itemscope itemtype="http://schema.org/Organization">
+		#{Organization member /}
+	</div>
+	#{/list}
 
-*{A member of this organization. (legacy spelling; see singular form, member).}*
-#{list items:_arg.members, as:'member'}
-<div itemprop="member" itemscope itemtype="http://schema.org/Person">
-	#{Person member /}
-</div>
-#{/list}
+	*{The date that this organization was founded.}*
+	<time itemprop="foundingDate" datetime="${_arg.foundingDate.format('yyyy-MM-dd')}">${_arg.foundingDate.format('yyyy-MM-dd')}</time>
 
-*{A member of this organization. (legacy spelling; see singular form, member).}*
-#{list items:_arg.members, as:'member'}
-<div itemprop="member" itemscope itemtype="http://schema.org/Organization">
-	#{Organization member /}
-</div>
-#{/list}
+	*{People working for this organization.}*
+	<div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.employee /}
+	</div>
 
-*{The location of the event or organization.}*
-<div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
-	#{PostalAddress _arg.location /}
-</div>
+	*{A member of this organization.}*
+	<div itemprop="member" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.member /}
+	</div>
 
-*{The location of the event or organization.}*
-<div itemprop="location" itemscope itemtype="http://schema.org/Place">
-	#{Place _arg.location /}
-</div>
+	*{A member of this organization.}*
+	<div itemprop="member" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.member /}
+	</div>
 
-*{A contact point for a person or organization. (legacy spelling; see singular form, contactPoint).}*
-#{list items:_arg.contactPoints, as:'contactPoint'}
-<div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
-	#{ContactPoint contactPoint /}
-</div>
-#{/list}
+	*{People working for this organization. (legacy spelling; see singular form, employee).}*
+	#{list items:_arg.employees, as:'employee'}
+	<div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+		#{Person employee /}
+	</div>
+	#{/list}
 
-*{People working for this organization.}*
-<div itemprop="employee" itemscope itemtype="http://schema.org/Person">
-	#{Person _arg.employee /}
-</div>
+	*{A contact point for a person or organization.}*
+	<div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+		#{ContactPoint _arg.contactPoint /}
+	</div>
 
-*{The date that this organization was founded.}*
-<time itemprop="foundingDate" datetime="${_arg.foundingDate.format('yyyy-MM-dd')}">${_arg.foundingDate.format('yyyy-MM-dd')}</time>
+	*{A person who founded this organization.}*
+	<div itemprop="founder" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.founder /}
+	</div>
 
-*{A person who founded this organization. (legacy spelling; see singular form, founder).}*
-#{list items:_arg.founders, as:'founder'}
-<div itemprop="founder" itemscope itemtype="http://schema.org/Person">
-	#{Person founder /}
-</div>
-#{/list}
+	*{Email address.}*
+	<span itemprop="email">${_arg.email}</span>
 

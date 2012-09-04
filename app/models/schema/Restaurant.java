@@ -1,14 +1,17 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
 * A restaurant.
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/Restaurant
 */
-public class Restaurant extends Model {
+public class Restaurant {
+
+	/**
+	* Either <code>Yes/No</code>, or a URL at which reservations can be made.
+	*/
+	public String acceptsReservations;
 
 	/**
 	* Either the actual menu or a URL of the menu.
@@ -21,9 +24,9 @@ public class Restaurant extends Model {
 	public String servesCuisine;
 
 	/**
-	* Either <code>Yes/No</code>, or a URL at which reservations can be made.
+	* The larger organization that this local business is a branch of, if any.
 	*/
-	public String acceptsReservations;
+	public Organization branchOf;
 
 	/**
 	* The price range of the business, for example <code>$$$</code>.
@@ -41,74 +44,24 @@ public class Restaurant extends Model {
 	public String currenciesAccepted;
 
 	/**
-	* The larger organization that this local business is a branch of, if any.
-	*/
-	public Organization branchOf;
-
-	/**
 	* The opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.<br />- Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.<br />- Times are specified using 24:00 time. For example, 3pm is specified as <code>15:00</code>.<br />Here is an example: <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>
 	*/
 	public String openingHours;
 
 	/**
-	* People working for this organization. (legacy spelling; see singular form, employee).
+	* A contact point for a person or organization. (legacy spelling; see singular form, contactPoint).
 	*/
-	public List<Person> employees;
+	public List<ContactPoint> contactPoints;
 
 	/**
-	* Email address.
+	* The fax number.
 	*/
-	public String email;
+	public String faxNumber;
 
 	/**
-	* The overall rating, based on a collection of reviews or ratings, of the item.
+	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
 	*/
-	public AggregateRating aggregateRating;
-
-	/**
-	* Review of the item.
-	*/
-	public Review review;
-
-	/**
-	* A member of this organization.
-	*/
-	//public Person member;
-
-	/**
-	* A member of this organization.
-	*/
-	//public Organization member;
-
-	/**
-	* A contact point for a person or organization.
-	*/
-	public ContactPoint contactPoint;
-
-	/**
-	* A person who founded this organization.
-	*/
-	public Person founder;
-
-	/**
-	* Review of the item. (legacy spelling; see singular form, review).
-	*/
-	public List<Review> reviews;
-
-	/**
-	* A member of this organization. (legacy spelling; see singular form, member).
-	*/
-	//public List<Person> members;
-
-	/**
-	* A member of this organization. (legacy spelling; see singular form, member).
-	*/
-	//public List<Organization> members;
-
-	/**
-	* The events held at this place or organization.
-	*/
-	public Event event;
+	public String interactionCount;
 
 	/**
 	* The location of the event or organization.
@@ -121,39 +74,14 @@ public class Restaurant extends Model {
 	//public Place location;
 
 	/**
-	* A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.
+	* A person who founded this organization. (legacy spelling; see singular form, founder).
 	*/
-	public String interactionCount;
+	public List<Person> founders;
 
 	/**
-	* A contact point for a person or organization. (legacy spelling; see singular form, contactPoint).
+	* The events held at this place or organization.
 	*/
-	public List<ContactPoint> contactPoints;
-
-	/**
-	* The events held at this place or organization. (legacy spelling; see singular form, event).
-	*/
-	public List<Event> events;
-
-	/**
-	* The fax number.
-	*/
-	public String faxNumber;
-
-	/**
-	* Physical address of the item.
-	*/
-	public PostalAddress address;
-
-	/**
-	* People working for this organization.
-	*/
-	public Person employee;
-
-	/**
-	* The date that this organization was founded.
-	*/
-	public Date foundingDate;
+	public Event event;
 
 	/**
 	* The telephone number.
@@ -161,19 +89,79 @@ public class Restaurant extends Model {
 	public String telephone;
 
 	/**
-	* A person who founded this organization. (legacy spelling; see singular form, founder).
+	* A member of this organization. (legacy spelling; see singular form, member).
 	*/
-	public List<Person> founders;
+	//public List<Person> members;
 
 	/**
-	* No documentation available :-(
+	* A member of this organization. (legacy spelling; see singular form, member).
 	*/
-	public String additionalType;
+	//public List<Organization> members;
 
 	/**
-	* A short description of the item.
+	* The date that this organization was founded.
 	*/
-	public String description;
+	public Date foundingDate;
+
+	/**
+	* The overall rating, based on a collection of reviews or ratings, of the item.
+	*/
+	public AggregateRating aggregateRating;
+
+	/**
+	* People working for this organization.
+	*/
+	public Person employee;
+
+	/**
+	* A member of this organization.
+	*/
+	//public Person member;
+
+	/**
+	* A member of this organization.
+	*/
+	//public Organization member;
+
+	/**
+	* Physical address of the item.
+	*/
+	public PostalAddress address;
+
+	/**
+	* People working for this organization. (legacy spelling; see singular form, employee).
+	*/
+	public List<Person> employees;
+
+	/**
+	* Review of the item. (legacy spelling; see singular form, review).
+	*/
+	public List<Review> reviews;
+
+	/**
+	* A contact point for a person or organization.
+	*/
+	public ContactPoint contactPoint;
+
+	/**
+	* A person who founded this organization.
+	*/
+	public Person founder;
+
+	/**
+	* Email address.
+	*/
+	public String email;
+
+	/**
+	* The events held at this place or organization. (legacy spelling; see singular form, event).
+	*/
+	public List<Event> events;
+
+	/**
+	* Review of the item.
+	*/
+	public Review review;
 
 	/**
 	* URL of the item.
@@ -191,9 +179,29 @@ public class Restaurant extends Model {
 	public String name;
 
 	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
+
+	/**
+	* The basic containment relation between places.
+	*/
+	public Place containedIn;
+
+	/**
 	* A URL to a map of the place.
 	*/
 	public String map;
+
+	/**
+	* A URL to a map of the place. (legacy spelling; see singular form, map).
+	*/
+	public List<String> maps;
 
 	/**
 	* Photographs of this place.
@@ -206,21 +214,6 @@ public class Restaurant extends Model {
 	//public ImageObject photo;
 
 	/**
-	* The basic containment relation between places.
-	*/
-	public Place containedIn;
-
-	/**
-	* Photographs of this place. (legacy spelling; see singular form, photo).
-	*/
-	//public List<Photograph> photos;
-
-	/**
-	* Photographs of this place. (legacy spelling; see singular form, photo).
-	*/
-	//public List<ImageObject> photos;
-
-	/**
 	* The geo coordinates of the place.
 	*/
 	//public GeoShape geo;
@@ -231,7 +224,12 @@ public class Restaurant extends Model {
 	//public GeoCoordinates geo;
 
 	/**
-	* A URL to a map of the place. (legacy spelling; see singular form, map).
+	* Photographs of this place. (legacy spelling; see singular form, photo).
 	*/
-	public List<String> maps;
+	//public List<Photograph> photos;
+
+	/**
+	* Photographs of this place. (legacy spelling; see singular form, photo).
+	*/
+	//public List<ImageObject> photos;
 }

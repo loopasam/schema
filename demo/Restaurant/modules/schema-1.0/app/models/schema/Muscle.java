@@ -1,134 +1,122 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
-* No documentation available :-(
+* No documentation available
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/Muscle
 */
-public class Muscle extends Model {
+public class Muscle {
 
 	/**
-	* No documentation available :-(
-	*/
-	public Vessel bloodSupply;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public AnatomicalStructure origin;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public AnatomicalStructure insertion;
 
 	/**
-	* No documentation available :-(
-	*/
-	public Muscle antagonist;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Nerve nerve;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public String action;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public AnatomicalStructure subStructure;
+	public Vessel bloodSupply;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalTherapy relatedTherapy;
+	public Muscle antagonist;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public AnatomicalStructure connectedTo;
+	public Nerve nerve;
 
 	/**
-	* No documentation available :-(
-	*/
-	public String bodyLocation;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String function;
-
-	/**
-	* No documentation available :-(
-	*/
-	public MedicalCondition relatedCondition;
-
-	/**
-	* No documentation available :-(
-	*/
-	public ImageObject diagram;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String associatedPathophysiology;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public AnatomicalSystem partOfSystem;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String alternateName;
+	public String function;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalGuideline guideline;
+	public MedicalTherapy relatedTherapy;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalStudy study;
+	public AnatomicalStructure subStructure;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public AnatomicalStructure connectedTo;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalCondition relatedCondition;
+
+	/**
+	* No documentation available
+	*/
+	public String bodyLocation;
+
+	/**
+	* No documentation available
+	*/
+	public ImageObject diagram;
+
+	/**
+	* No documentation available
+	*/
+	public String associatedPathophysiology;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public Organization recognizingAuthority;
+	public MedicalStudy study;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicineSystem medicineSystem;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalCode code;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String additionalType;
+	public MedicalGuideline guideline;
 
 	/**
-	* A short description of the item.
+	* No documentation available
 	*/
-	public String description;
+	public String alternateName;
 
 	/**
 	* URL of the item.
@@ -144,4 +132,14 @@ public class Muscle extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

@@ -1,34 +1,12 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
-* No documentation available :-(
+* No documentation available
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/GeoShape
 */
-public class GeoShape extends Model {
-
-	/**
-	* No documentation available :-(
-	*/
-	public String circle;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String line;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String polygon;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String box;
+public class GeoShape {
 
 	/**
 	* The elevation of a location.
@@ -41,14 +19,24 @@ public class GeoShape extends Model {
 	//public String elevation;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String additionalType;
+	public String box;
 
 	/**
-	* A short description of the item.
+	* No documentation available
 	*/
-	public String description;
+	public String line;
+
+	/**
+	* No documentation available
+	*/
+	public String polygon;
+
+	/**
+	* No documentation available
+	*/
+	public String circle;
 
 	/**
 	* URL of the item.
@@ -64,4 +52,14 @@ public class GeoShape extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

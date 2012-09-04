@@ -1,84 +1,67 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
-* No documentation available :-(
+* No documentation available
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/DiagnosticProcedure
 */
-public class DiagnosticProcedure extends Model {
+public class DiagnosticProcedure {
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalSign signDetected;
+	public MedicalProcedureType procedureType;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String normalRange;
+	public String howPerformed;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalDevice usesDevice;
+	public String preparation;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public Drug affectedBy;
+	public String followup;
 
 	/**
-	* No documentation available :-(
-	*/
-	public MedicalCondition usedToDiagnose;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String alternateName;
-
-	/**
-	* No documentation available :-(
-	*/
-	public MedicalGuideline guideline;
-
-	/**
-	* No documentation available :-(
-	*/
-	public MedicalStudy study;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public Organization recognizingAuthority;
+	public MedicalStudy study;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicineSystem medicineSystem;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalCode code;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String additionalType;
+	public MedicalGuideline guideline;
 
 	/**
-	* A short description of the item.
+	* No documentation available
 	*/
-	public String description;
+	public String alternateName;
 
 	/**
 	* URL of the item.
@@ -96,22 +79,37 @@ public class DiagnosticProcedure extends Model {
 	public String name;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String followup;
+	public String additionalType;
 
 	/**
-	* No documentation available :-(
+	* A short description of the item.
 	*/
-	public String howPerformed;
+	public String description;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalProcedureType procedureType;
+	public String normalRange;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String preparation;
+	public MedicalCondition usedToDiagnose;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalDevice usesDevice;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalSign signDetected;
+
+	/**
+	* No documentation available
+	*/
+	public Drug affectedBy;
 }

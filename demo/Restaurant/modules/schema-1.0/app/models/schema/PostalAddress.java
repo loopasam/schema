@@ -1,19 +1,17 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
 * The mailing address.
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/PostalAddress
 */
-public class PostalAddress extends Model {
+public class PostalAddress {
 
 	/**
-	* The street address. For example, 1600 Amphitheatre Pkwy.
+	* The post offce box number for PO box addresses.
 	*/
-	public String streetAddress;
+	public String postOfficeBoxNumber;
 
 	/**
 	* The postal code. For example, 94043.
@@ -31,14 +29,14 @@ public class PostalAddress extends Model {
 	public Country addressCountry;
 
 	/**
-	* The post offce box number for PO box addresses.
-	*/
-	public String postOfficeBoxNumber;
-
-	/**
 	* The locality. For example, Mountain View.
 	*/
 	public String addressLocality;
+
+	/**
+	* The street address. For example, 1600 Amphitheatre Pkwy.
+	*/
+	public String streetAddress;
 
 	/**
 	* The fax number.
@@ -46,9 +44,9 @@ public class PostalAddress extends Model {
 	public String faxNumber;
 
 	/**
-	* Email address.
+	* A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.
 	*/
-	public String email;
+	public String contactType;
 
 	/**
 	* The telephone number.
@@ -56,19 +54,9 @@ public class PostalAddress extends Model {
 	public String telephone;
 
 	/**
-	* A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.
+	* Email address.
 	*/
-	public String contactType;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
+	public String email;
 
 	/**
 	* URL of the item.
@@ -84,4 +72,14 @@ public class PostalAddress extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

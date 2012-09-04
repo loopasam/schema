@@ -1,79 +1,67 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
-* No documentation available :-(
+* No documentation available
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/TherapeuticProcedure
 */
-public class TherapeuticProcedure extends Model {
+public class TherapeuticProcedure {
 
 	/**
-	* No documentation available :-(
-	*/
-	public String followup;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String howPerformed;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalProcedureType procedureType;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public String howPerformed;
+
+	/**
+	* No documentation available
 	*/
 	public String preparation;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String alternateName;
+	public String followup;
 
 	/**
-	* No documentation available :-(
-	*/
-	public MedicalGuideline guideline;
-
-	/**
-	* No documentation available :-(
-	*/
-	public MedicalStudy study;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public Organization recognizingAuthority;
+	public MedicalStudy study;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicineSystem medicineSystem;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalCode code;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String additionalType;
+	public MedicalGuideline guideline;
 
 	/**
-	* A short description of the item.
+	* No documentation available
 	*/
-	public String description;
+	public String alternateName;
 
 	/**
 	* URL of the item.
@@ -91,27 +79,37 @@ public class TherapeuticProcedure extends Model {
 	public String name;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalEntity seriousAdverseOutcome;
+	public String additionalType;
 
 	/**
-	* No documentation available :-(
+	* A short description of the item.
+	*/
+	public String description;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalIndication indication;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalTherapy duplicateTherapy;
+	public MedicalEntity seriousAdverseOutcome;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public MedicalContraindication contraindication;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalEntity adverseOutcome;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalContraindication contraindication;
+	public MedicalTherapy duplicateTherapy;
 }

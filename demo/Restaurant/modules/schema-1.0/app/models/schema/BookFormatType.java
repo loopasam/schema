@@ -1,24 +1,12 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
 * The publication format of the book.
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/BookFormatType
 */
-public class BookFormatType extends Model {
-
-	/**
-	* No documentation available :-(
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
+public class BookFormatType {
 
 	/**
 	* URL of the item.
@@ -34,4 +22,14 @@ public class BookFormatType extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

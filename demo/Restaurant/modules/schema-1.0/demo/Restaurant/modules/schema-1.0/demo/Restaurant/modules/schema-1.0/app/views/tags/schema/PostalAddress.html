@@ -1,0 +1,47 @@
+*{The street address. For example, 1600 Amphitheatre Pkwy.}*
+<span itemprop="streetAddress">${_arg.streetAddress}</span>
+
+*{The postal code. For example, 94043.}*
+<span itemprop="postalCode">${_arg.postalCode}</span>
+
+*{The region. For example, CA.}*
+<span itemprop="addressRegion">${_arg.addressRegion}</span>
+
+*{The country. For example, USA. You can also provide the two-letter <a href="http://en.wikipedia.org/wiki/ISO_3166-1" target="new">ISO 3166-1 alpha-2 country code</a>.}*
+<div itemprop="addressCountry" itemscope itemtype="http://schema.org/Country">
+	#{Country _arg.addressCountry /}
+</div>
+
+*{The post offce box number for PO box addresses.}*
+<span itemprop="postOfficeBoxNumber">${_arg.postOfficeBoxNumber}</span>
+
+*{The locality. For example, Mountain View.}*
+<span itemprop="addressLocality">${_arg.addressLocality}</span>
+
+*{The fax number.}*
+<span itemprop="faxNumber">${_arg.faxNumber}</span>
+
+*{Email address.}*
+<span itemprop="email">${_arg.email}</span>
+
+*{The telephone number.}*
+<span itemprop="telephone">${_arg.telephone}</span>
+
+*{A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.}*
+<span itemprop="contactType">${_arg.contactType}</span>
+
+*{No documentation available :-(}*
+<span itemprop="additionalType">${_arg.additionalType}</span>
+
+*{A short description of the item.}*
+<span itemprop="description">${_arg.description}</span>
+
+*{URL of the item.}*
+<span itemprop="url">${_arg.url}</span>
+
+*{URL of an image of the item.}*
+<span itemprop="image">${_arg.image}</span>
+
+*{The name of the item.}*
+<span itemprop="name">${_arg.name}</span>
+

@@ -1,94 +1,82 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
-* No documentation available :-(
+* No documentation available
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/DrugCost
 */
-public class DrugCost extends Model {
+public class DrugCost {
 
 	/**
-	* No documentation available :-(
-	*/
-	public String drugUnit;
-
-	/**
-	* No documentation available :-(
-	*/
-	public String costOrigin;
-
-	/**
-	* No documentation available :-(
-	*/
-	public AdministrativeArea applicableLocation;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public DrugCostCategory costCategory;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	//public Integer costPerUnit;
+	public AdministrativeArea applicableLocation;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	//public String costPerUnit;
+	public String drugUnit;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public String costCurrency;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String alternateName;
+	//public Integer costPerUnit;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalGuideline guideline;
+	//public String costPerUnit;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalStudy study;
+	public String costOrigin;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public Organization recognizingAuthority;
+	public MedicalStudy study;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicineSystem medicineSystem;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalCode code;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String additionalType;
+	public MedicalGuideline guideline;
 
 	/**
-	* A short description of the item.
+	* No documentation available
 	*/
-	public String description;
+	public String alternateName;
 
 	/**
 	* URL of the item.
@@ -104,4 +92,14 @@ public class DrugCost extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

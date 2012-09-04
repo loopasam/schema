@@ -1,0 +1,220 @@
+<div class='Map'>
+	*{No documentation available}*
+	<div itemprop="contributor" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.contributor /}
+	</div>
+
+	*{No documentation available}*
+	<div itemprop="contributor" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.contributor /}
+	</div>
+
+	*{No documentation available}*
+	<span itemprop="discussionUrl">${_arg.discussionUrl}</span>
+
+	*{No documentation available}*
+	<span itemprop="thumbnailUrl">${_arg.thumbnailUrl}</span>
+
+	*{Awards won by this person or for this creative work. (legacy spelling; see singular form, award).}*
+	#{list items:_arg.awards, as:'award'}
+	<span itemprop="award">${award}</span>
+	#{/list}
+
+	*{Review of the item.}*
+	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
+		#{Review _arg.review /}
+	</div>
+
+	*{No documentation available}*
+	<div itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+		#{UserComments _arg.comment /}
+	</div>
+
+	*{The overall rating, based on a collection of reviews or ratings, of the item.}*
+	<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+		#{AggregateRating _arg.aggregateRating /}
+	</div>
+
+	*{The media objects that encode this creative work (legacy spelling; see singular form, encoding).}*
+	#{list items:_arg.encodings, as:'encoding'}
+	<div itemprop="encoding" itemscope itemtype="http://schema.org/MediaObject">
+		#{MediaObject encoding /}
+	</div>
+	#{/list}
+
+	*{Review of the item. (legacy spelling; see singular form, review).}*
+	#{list items:_arg.reviews, as:'review'}
+	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
+		#{Review review /}
+	</div>
+	#{/list}
+
+	*{No documentation available}*
+	<div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.creator /}
+	</div>
+
+	*{No documentation available}*
+	<div itemprop="creator" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.creator /}
+	</div>
+
+	*{The keywords/tags used to describe this content.}*
+	<span itemprop="keywords">${_arg.keywords}</span>
+
+	*{Indicates whether this content is family friendly.}*
+	<span itemprop="isFamilyFriendly">${_arg.isFamilyFriendly}</span>
+
+	*{An embeded video object or URL associated with the content.}*
+	<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+		#{VideoObject _arg.video /}
+	</div>
+
+	*{No documentation available}*
+	<div itemprop="accountablePerson" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.accountablePerson /}
+	</div>
+
+	*{No documentation available}*
+	<span itemprop="version">${_arg.version}</span>
+
+	*{An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.}*
+	<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+		#{Offer _arg.offers /}
+	</div>
+
+	*{No documentation available}*
+	<time itemprop="dateModified" datetime="${_arg.dateModified.format('yyyy-MM-dd')}">${_arg.dateModified.format('yyyy-MM-dd')}</time>
+
+	*{Genre of the creative work}*
+	<span itemprop="genre">${_arg.genre}</span>
+
+	*{No documentation available}*
+	<div itemprop="associatedMedia" itemscope itemtype="http://schema.org/MediaObject">
+		#{MediaObject _arg.associatedMedia /}
+	</div>
+
+	*{No documentation available}*
+	<time itemprop="dateCreated" datetime="${_arg.dateCreated.format('yyyy-MM-dd')}">${_arg.dateCreated.format('yyyy-MM-dd')}</time>
+
+	*{Official rating of a piece of content&mdash;for example,'MPAA PG-13'.}*
+	<span itemprop="contentRating">${_arg.contentRating}</span>
+
+	*{No documentation available}*
+	<span itemprop="copyrightYear">${_arg.copyrightYear}</span>
+
+	*{The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangabely.}*
+	<div itemprop="author" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.author /}
+	</div>
+
+	*{The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangabely.}*
+	<div itemprop="author" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.author /}
+	</div>
+
+	*{No documentation available}*
+	<span itemprop="publishingPrinciples">${_arg.publishingPrinciples}</span>
+
+	*{Awards won by this person or for this creative work.}*
+	<span itemprop="award">${_arg.award}</span>
+
+	*{No documentation available}*
+	<span itemprop="alternativeHeadline">${_arg.alternativeHeadline}</span>
+
+	*{No documentation available}*
+	<div itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.copyrightHolder /}
+	</div>
+
+	*{No documentation available}*
+	<div itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.copyrightHolder /}
+	</div>
+
+	*{No documentation available}*
+	<div itemprop="audience" itemscope itemtype="http://schema.org/Audience">
+		#{Audience _arg.audience /}
+	</div>
+
+	*{The media objects that encode this creative work}*
+	<div itemprop="encoding" itemscope itemtype="http://schema.org/MediaObject">
+		#{MediaObject _arg.encoding /}
+	</div>
+
+	*{The language of the content. please use one of the language codes from the <a href=http://tools.ietf.org/html/bcp47>IETF BCP 47 standard.</a>}*
+	<span itemprop="inLanguage">${_arg.inLanguage}</span>
+
+	*{The location of the content.}*
+	<div itemprop="contentLocation" itemscope itemtype="http://schema.org/Place">
+		#{Place _arg.contentLocation /}
+	</div>
+
+	*{A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.}*
+	<span itemprop="interactionCount">${_arg.interactionCount}</span>
+
+	*{No documentation available}*
+	<div itemprop="mentions" itemscope itemtype="http://schema.org/Thing">
+		#{Thing _arg.mentions /}
+	</div>
+
+	*{The subject matter of the content.}*
+	<div itemprop="about" itemscope itemtype="http://schema.org/Thing">
+		#{Thing _arg.about /}
+	</div>
+
+	*{No documentation available}*
+	<span itemprop="text">${_arg.text}</span>
+
+	*{No documentation available}*
+	<div itemprop="provider" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.provider /}
+	</div>
+
+	*{No documentation available}*
+	<div itemprop="provider" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.provider /}
+	</div>
+
+	*{Date of first broadcast/publication.}*
+	<time itemprop="datePublished" datetime="${_arg.datePublished.format('yyyy-MM-dd')}">${_arg.datePublished.format('yyyy-MM-dd')}</time>
+
+	*{The publisher of the creative work.}*
+	<div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.publisher /}
+	</div>
+
+	*{Headline of the article}*
+	<span itemprop="headline">${_arg.headline}</span>
+
+	*{No documentation available}*
+	<div itemprop="sourceOrganization" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.sourceOrganization /}
+	</div>
+
+	*{An embeded audio object or URL associated with the content.}*
+	<div itemprop="audio" itemscope itemtype="http://schema.org/AudioObject">
+		#{AudioObject _arg.audio /}
+	</div>
+
+	*{Editor for this content.}*
+	<div itemprop="editor" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.editor /}
+	</div>
+
+	*{No documentation available}*
+	<span itemprop="additionalType">${_arg.additionalType}</span>
+
+	*{A short description of the item.}*
+	<span itemprop="description">${_arg.description}</span>
+
+	*{URL of the item.}*
+	<span itemprop="url">${_arg.url}</span>
+
+	*{URL of an image of the item.}*
+	<span itemprop="image">${_arg.image}</span>
+
+	*{The name of the item.}*
+	<span itemprop="name">${_arg.name}</span>
+
+</div>

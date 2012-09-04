@@ -1,0 +1,192 @@
+<div class='Person'>
+	*{The person's spouse.}*
+	<div itemprop="spouse" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.spouse /}
+	</div>
+
+	*{Organizations that the person works for.}*
+	<div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.worksFor /}
+	</div>
+
+	*{Awards won by this person or for this creative work. (legacy spelling; see singular form, award).}*
+	#{list items:_arg.awards, as:'award'}
+	<span itemprop="award">${award}</span>
+	#{/list}
+
+	*{A sibling of the person. (legacy spelling; see singular form, sibling).}*
+	#{list items:_arg.siblings, as:'sibling'}
+	<div itemprop="sibling" itemscope itemtype="http://schema.org/Person">
+		#{Person sibling /}
+	</div>
+	#{/list}
+
+	*{Gender of the person.}*
+	<span itemprop="gender">${_arg.gender}</span>
+
+	*{A contact point for a person or organization.}*
+	<div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+		#{ContactPoint _arg.contactPoint /}
+	</div>
+
+	*{The most generic uni-directional social relation.}*
+	<div itemprop="follows" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.follows /}
+	</div>
+
+	*{A parents of the person. (legacy spelling; see singular form, parent).}*
+	#{list items:_arg.parents, as:'parent'}
+	<div itemprop="parent" itemscope itemtype="http://schema.org/Person">
+		#{Person parent /}
+	</div>
+	#{/list}
+
+	*{A child of the person.}*
+	<div itemprop="children" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.children /}
+	</div>
+
+	*{An organization to which the person belongs.}*
+	<div itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.memberOf /}
+	</div>
+
+	*{No documentation available}*
+	<span itemprop="additionalName">${_arg.additionalName}</span>
+
+	*{A colleague of the person. (legacy spelling; see singular form, colleague).}*
+	#{list items:_arg.colleagues, as:'colleague'}
+	<div itemprop="colleague" itemscope itemtype="http://schema.org/Person">
+		#{Person colleague /}
+	</div>
+	#{/list}
+
+	*{A contact point for a person or organization. (legacy spelling; see singular form, contactPoint).}*
+	#{list items:_arg.contactPoints, as:'contactPoint'}
+	<div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+		#{ContactPoint contactPoint /}
+	</div>
+	#{/list}
+
+	*{Date of birth.}*
+	<time itemprop="birthDate" datetime="${_arg.birthDate.format('yyyy-MM-dd')}">${_arg.birthDate.format('yyyy-MM-dd')}</time>
+
+	*{Nationality of the person.}*
+	<div itemprop="nationality" itemscope itemtype="http://schema.org/Country">
+		#{Country _arg.nationality /}
+	</div>
+
+	*{Event that this person is a performer or participant in.}*
+	<div itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
+		#{Event _arg.performerIn /}
+	</div>
+
+	*{The fax number.}*
+	<span itemprop="faxNumber">${_arg.faxNumber}</span>
+
+	*{Physical address of the item.}*
+	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		#{PostalAddress _arg.address /}
+	</div>
+
+	*{No documentation available}*
+	<span itemprop="honorificPrefix">${_arg.honorificPrefix}</span>
+
+	*{The job title of the person (for example, Financial Manager).}*
+	<span itemprop="jobTitle">${_arg.jobTitle}</span>
+
+	*{No documentation available}*
+	<span itemprop="honorificSuffix">${_arg.honorificSuffix}</span>
+
+	*{Date of death.}*
+	<time itemprop="deathDate" datetime="${_arg.deathDate.format('yyyy-MM-dd')}">${_arg.deathDate.format('yyyy-MM-dd')}</time>
+
+	*{No documentation available}*
+	<span itemprop="familyName">${_arg.familyName}</span>
+
+	*{A contact location for a person's residence.}*
+	<div itemprop="homeLocation" itemscope itemtype="http://schema.org/ContactPoint">
+		#{ContactPoint _arg.homeLocation /}
+	</div>
+
+	*{A contact location for a person's residence.}*
+	<div itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+		#{Place _arg.homeLocation /}
+	</div>
+
+	*{A contact location for a person's place of work.}*
+	<div itemprop="workLocation" itemscope itemtype="http://schema.org/ContactPoint">
+		#{ContactPoint _arg.workLocation /}
+	</div>
+
+	*{A contact location for a person's place of work.}*
+	<div itemprop="workLocation" itemscope itemtype="http://schema.org/Place">
+		#{Place _arg.workLocation /}
+	</div>
+
+	*{An educational organizations that the person is an alumni of.}*
+	<div itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+		#{EducationalOrganization _arg.alumniOf /}
+	</div>
+
+	*{Email address.}*
+	<span itemprop="email">${_arg.email}</span>
+
+	*{Awards won by this person or for this creative work.}*
+	<span itemprop="award">${_arg.award}</span>
+
+	*{An organization that this person is affiliated with. For example, a school/university, a club, or a team.}*
+	<div itemprop="affiliation" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.affiliation /}
+	</div>
+
+	*{A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.}*
+	<span itemprop="interactionCount">${_arg.interactionCount}</span>
+
+	*{A colleague of the person.}*
+	<div itemprop="colleague" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.colleague /}
+	</div>
+
+	*{The most generic familial relation.}*
+	<div itemprop="relatedTo" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.relatedTo /}
+	</div>
+
+	*{No documentation available}*
+	<span itemprop="givenName">${_arg.givenName}</span>
+
+	*{A sibling of the person.}*
+	<div itemprop="sibling" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.sibling /}
+	</div>
+
+	*{The most generic bi-directional social/work relation.}*
+	<div itemprop="knows" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.knows /}
+	</div>
+
+	*{The telephone number.}*
+	<span itemprop="telephone">${_arg.telephone}</span>
+
+	*{A parents of the person.}*
+	<div itemprop="parent" itemscope itemtype="http://schema.org/Person">
+		#{Person _arg.parent /}
+	</div>
+
+	*{No documentation available}*
+	<span itemprop="additionalType">${_arg.additionalType}</span>
+
+	*{A short description of the item.}*
+	<span itemprop="description">${_arg.description}</span>
+
+	*{URL of the item.}*
+	<span itemprop="url">${_arg.url}</span>
+
+	*{URL of an image of the item.}*
+	<span itemprop="image">${_arg.image}</span>
+
+	*{The name of the item.}*
+	<span itemprop="name">${_arg.name}</span>
+
+</div>

@@ -1,89 +1,77 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
-* No documentation available :-(
+* No documentation available
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/ImagingTest
 */
-public class ImagingTest extends Model {
+public class ImagingTest {
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalImagingTechnique imagingTechnique;
 
 	/**
-	* No documentation available :-(
-	*/
-	public MedicalSign signDetected;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public String normalRange;
 
 	/**
-	* No documentation available :-(
-	*/
-	public MedicalDevice usesDevice;
-
-	/**
-	* No documentation available :-(
-	*/
-	public Drug affectedBy;
-
-	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalCondition usedToDiagnose;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String alternateName;
+	public MedicalDevice usesDevice;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalGuideline guideline;
+	public MedicalSign signDetected;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public MedicalStudy study;
+	public Drug affectedBy;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public Organization recognizingAuthority;
+	public MedicalStudy study;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
 	public MedicineSystem medicineSystem;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
+
+	/**
+	* No documentation available
 	*/
 	public MedicalCode code;
 
 	/**
-	* No documentation available :-(
+	* No documentation available
 	*/
-	public String additionalType;
+	public MedicalGuideline guideline;
 
 	/**
-	* A short description of the item.
+	* No documentation available
 	*/
-	public String description;
+	public String alternateName;
 
 	/**
 	* URL of the item.
@@ -99,4 +87,14 @@ public class ImagingTest extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

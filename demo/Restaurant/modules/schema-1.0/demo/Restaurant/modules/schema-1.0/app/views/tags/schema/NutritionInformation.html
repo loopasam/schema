@@ -1,0 +1,75 @@
+<div class='NutritionInformation'>
+	*{The serving size, in terms of the number of volume or mass}*
+	<span itemprop="servingSize">${_arg.servingSize}</span>
+
+	*{The number of milligrams of sodium.}*
+	<div itemprop="sodiumContent" itemscope itemtype="http://schema.org/Mass">
+		#{Mass _arg.sodiumContent /}
+	</div>
+
+	*{The number of grams of protein.}*
+	<div itemprop="proteinContent" itemscope itemtype="http://schema.org/Mass">
+		#{Mass _arg.proteinContent /}
+	</div>
+
+	*{The number of grams of sugar.}*
+	<div itemprop="sugarContent" itemscope itemtype="http://schema.org/Mass">
+		#{Mass _arg.sugarContent /}
+	</div>
+
+	*{The number of grams of fiber.}*
+	<div itemprop="fiberContent" itemscope itemtype="http://schema.org/Mass">
+		#{Mass _arg.fiberContent /}
+	</div>
+
+	*{The number of grams of trans fat.}*
+	<div itemprop="transFatContent" itemscope itemtype="http://schema.org/Mass">
+		#{Mass _arg.transFatContent /}
+	</div>
+
+	*{The number of calories}*
+	<div itemprop="calories" itemscope itemtype="http://schema.org/Energy">
+		#{Energy _arg.calories /}
+	</div>
+
+	*{The number of grams of saturated fat.}*
+	<div itemprop="saturatedFatContent" itemscope itemtype="http://schema.org/Mass">
+		#{Mass _arg.saturatedFatContent /}
+	</div>
+
+	*{The number of grams of carbohydrates.}*
+	<div itemprop="carbohydrateContent" itemscope itemtype="http://schema.org/Mass">
+		#{Mass _arg.carbohydrateContent /}
+	</div>
+
+	*{The number of milligrams of cholesterol.}*
+	<div itemprop="cholesterolContent" itemscope itemtype="http://schema.org/Mass">
+		#{Mass _arg.cholesterolContent /}
+	</div>
+
+	*{The number of grams of unsaturated fat.}*
+	<div itemprop="unsaturatedFatContent" itemscope itemtype="http://schema.org/Mass">
+		#{Mass _arg.unsaturatedFatContent /}
+	</div>
+
+	*{The number of grams of fat.}*
+	<div itemprop="fatContent" itemscope itemtype="http://schema.org/Mass">
+		#{Mass _arg.fatContent /}
+	</div>
+
+	*{No documentation available}*
+	<span itemprop="additionalType">${_arg.additionalType}</span>
+
+	*{A short description of the item.}*
+	<span itemprop="description">${_arg.description}</span>
+
+	*{URL of the item.}*
+	<span itemprop="url">${_arg.url}</span>
+
+	*{URL of an image of the item.}*
+	<span itemprop="image">${_arg.image}</span>
+
+	*{The name of the item.}*
+	<span itemprop="name">${_arg.name}</span>
+
+</div>

@@ -1,39 +1,12 @@
 package models.schema;
 
-import play.db.jpa.Model;
-
 import java.util.*;
 
 /**
 * Nutritional information about the recipe.
 * Auto-generated class (Schema Draft Version 0.97) - More info about this type: http://schema.org/NutritionInformation
 */
-public class NutritionInformation extends Model {
-
-	/**
-	* The number of milligrams of sodium.
-	*/
-	public Mass sodiumContent;
-
-	/**
-	* The number of grams of sugar.
-	*/
-	public Mass sugarContent;
-
-	/**
-	* The number of milligrams of cholesterol.
-	*/
-	public Mass cholesterolContent;
-
-	/**
-	* The number of grams of saturated fat.
-	*/
-	public Mass saturatedFatContent;
-
-	/**
-	* The number of grams of trans fat.
-	*/
-	public Mass transFatContent;
+public class NutritionInformation {
 
 	/**
 	* The number of grams of protein.
@@ -41,29 +14,19 @@ public class NutritionInformation extends Model {
 	public Mass proteinContent;
 
 	/**
+	* The number of grams of trans fat.
+	*/
+	public Mass transFatContent;
+
+	/**
 	* The number of grams of unsaturated fat.
 	*/
 	public Mass unsaturatedFatContent;
 
 	/**
-	* The number of grams of carbohydrates.
+	* The number of grams of saturated fat.
 	*/
-	public Mass carbohydrateContent;
-
-	/**
-	* The serving size, in terms of the number of volume or mass
-	*/
-	public String servingSize;
-
-	/**
-	* The number of grams of fat.
-	*/
-	public Mass fatContent;
-
-	/**
-	* The number of grams of fiber.
-	*/
-	public Mass fiberContent;
+	public Mass saturatedFatContent;
 
 	/**
 	* The number of calories
@@ -71,14 +34,39 @@ public class NutritionInformation extends Model {
 	public Energy calories;
 
 	/**
-	* No documentation available :-(
+	* The number of grams of fat.
 	*/
-	public String additionalType;
+	public Mass fatContent;
 
 	/**
-	* A short description of the item.
+	* The serving size, in terms of the number of volume or mass
 	*/
-	public String description;
+	public String servingSize;
+
+	/**
+	* The number of milligrams of cholesterol.
+	*/
+	public Mass cholesterolContent;
+
+	/**
+	* The number of milligrams of sodium.
+	*/
+	public Mass sodiumContent;
+
+	/**
+	* The number of grams of fiber.
+	*/
+	public Mass fiberContent;
+
+	/**
+	* The number of grams of carbohydrates.
+	*/
+	public Mass carbohydrateContent;
+
+	/**
+	* The number of grams of sugar.
+	*/
+	public Mass sugarContent;
 
 	/**
 	* URL of the item.
@@ -94,4 +82,14 @@ public class NutritionInformation extends Model {
 	* The name of the item.
 	*/
 	public String name;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 }

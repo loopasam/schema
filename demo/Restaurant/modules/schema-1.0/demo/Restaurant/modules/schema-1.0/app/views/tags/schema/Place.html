@@ -1,0 +1,107 @@
+<div class='Place'>
+	*{A URL to a map of the place.}*
+	<span itemprop="map">${_arg.map}</span>
+
+	*{The overall rating, based on a collection of reviews or ratings, of the item.}*
+	<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+		#{AggregateRating _arg.aggregateRating /}
+	</div>
+
+	*{Review of the item.}*
+	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
+		#{Review _arg.review /}
+	</div>
+
+	*{Photographs of this place.}*
+	<div itemprop="photo" itemscope itemtype="http://schema.org/Photograph">
+		#{Photograph _arg.photo /}
+	</div>
+
+	*{Photographs of this place.}*
+	<div itemprop="photo" itemscope itemtype="http://schema.org/ImageObject">
+		#{ImageObject _arg.photo /}
+	</div>
+
+	*{Review of the item. (legacy spelling; see singular form, review).}*
+	#{list items:_arg.reviews, as:'review'}
+	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
+		#{Review review /}
+	</div>
+	#{/list}
+
+	*{The events held at this place or organization.}*
+	<div itemprop="event" itemscope itemtype="http://schema.org/Event">
+		#{Event _arg.event /}
+	</div>
+
+	*{A count of a specific user interactions with this item&mdash;for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=UserInteraction>UserInteraction</a>.}*
+	<span itemprop="interactionCount">${_arg.interactionCount}</span>
+
+	*{The basic containment relation between places.}*
+	<div itemprop="containedIn" itemscope itemtype="http://schema.org/Place">
+		#{Place _arg.containedIn /}
+	</div>
+
+	*{Photographs of this place. (legacy spelling; see singular form, photo).}*
+	#{list items:_arg.photos, as:'photo'}
+	<div itemprop="photo" itemscope itemtype="http://schema.org/Photograph">
+		#{Photograph photo /}
+	</div>
+	#{/list}
+
+	*{Photographs of this place. (legacy spelling; see singular form, photo).}*
+	#{list items:_arg.photos, as:'photo'}
+	<div itemprop="photo" itemscope itemtype="http://schema.org/ImageObject">
+		#{ImageObject photo /}
+	</div>
+	#{/list}
+
+	*{The events held at this place or organization. (legacy spelling; see singular form, event).}*
+	#{list items:_arg.events, as:'event'}
+	<div itemprop="event" itemscope itemtype="http://schema.org/Event">
+		#{Event event /}
+	</div>
+	#{/list}
+
+	*{The fax number.}*
+	<span itemprop="faxNumber">${_arg.faxNumber}</span>
+
+	*{The geo coordinates of the place.}*
+	<div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+		#{GeoCoordinates _arg.geo /}
+	</div>
+
+	*{The geo coordinates of the place.}*
+	<div itemprop="geo" itemscope itemtype="http://schema.org/GeoShape">
+		#{GeoShape _arg.geo /}
+	</div>
+
+	*{Physical address of the item.}*
+	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		#{PostalAddress _arg.address /}
+	</div>
+
+	*{A URL to a map of the place. (legacy spelling; see singular form, map).}*
+	#{list items:_arg.maps, as:'map'}
+	<span itemprop="map">${map}</span>
+	#{/list}
+
+	*{The telephone number.}*
+	<span itemprop="telephone">${_arg.telephone}</span>
+
+	*{No documentation available}*
+	<span itemprop="additionalType">${_arg.additionalType}</span>
+
+	*{A short description of the item.}*
+	<span itemprop="description">${_arg.description}</span>
+
+	*{URL of the item.}*
+	<span itemprop="url">${_arg.url}</span>
+
+	*{URL of an image of the item.}*
+	<span itemprop="image">${_arg.image}</span>
+
+	*{The name of the item.}*
+	<span itemprop="name">${_arg.name}</span>
+
+</div>
