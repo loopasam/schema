@@ -2,8 +2,10 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
+<div class="column">
 #{list items:restaurants, as:'restaurant'}
 <div class="Restaurant" itemscope itemtype="http://schema.org/Restaurant">
 	#{Restaurant restaurant /}
 </div>
 #{/list}
+</div>

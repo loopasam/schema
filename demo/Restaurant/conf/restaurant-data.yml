@@ -3,11 +3,13 @@
 PostalAddress(addressBrasserie):
     streetAddress:          45, rue des Ours
     postalCode:          75852
+    addressRegion:          Paris
     addressCountry:          FR
     
 PostalAddress(addressPizzeria):
     streetAddress:          16 N Ontario
     postalCode:          60615
+    addressRegion:          IL
     addressCountry:          USA
     
 Restaurant(pizzeria):
@@ -35,5 +37,5 @@ Review(reviewPizzeria1):
 Review(reviewPizzeria2):
     dateCreated:          2010-12-11
     reviewBody:          I was very disappointed, this is not pizza at all.
-    name:          :-(
+    name:          Disappointed
     itemReviewed:           pizzeria

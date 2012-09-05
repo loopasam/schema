@@ -1,8 +1,8 @@
 *{The name of the item.}*
-<span itemprop="name">${_arg.name}</span>
+<h3 itemprop="name">${_arg.name}</h3>
 
-*{No documentation available}*
-<time itemprop="dateCreated" datetime="${_arg.dateCreated.format('yyyy-MM-dd')}">${_arg.dateCreated.format('yyyy-MM-dd')}</time>
-
+*{No documentation available :-(}*
+<time class="dateCreated" itemprop="dateCreated" datetime="${_arg.dateCreated.format('yyyy-MM-dd')}"> - ${_arg.dateCreated.format('dd MMMM yyyy', 'en')}</time>
+<hr />
 *{The actual body of the review}*
-<span itemprop="reviewBody">${_arg.reviewBody}</span>
+<p itemprop="reviewBody">${_arg.reviewBody}</p>
