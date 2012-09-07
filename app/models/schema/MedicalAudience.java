@@ -9,6 +9,16 @@ import java.util.*;
 public class MedicalAudience {
 
 	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
+
+	/**
 	* URL of the item.
 	*/
 	public String url;
@@ -26,17 +36,17 @@ public class MedicalAudience {
 	/**
 	* No documentation available
 	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
+	public MedicalCode code;
 
 	/**
 	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
+
+	/**
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
 
 	/**
 	* No documentation available
@@ -47,16 +57,6 @@ public class MedicalAudience {
 	* No documentation available
 	*/
 	public MedicineSystem medicineSystem;
-
-	/**
-	* No documentation available
-	*/
-	public Organization recognizingAuthority;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalCode code;
 
 	/**
 	* No documentation available

@@ -9,9 +9,9 @@ import java.util.*;
 public class PostalAddress {
 
 	/**
-	* The post offce box number for PO box addresses.
+	* The street address. For example, 1600 Amphitheatre Pkwy.
 	*/
-	public String postOfficeBoxNumber;
+	public String streetAddress;
 
 	/**
 	* The postal code. For example, 94043.
@@ -29,14 +29,14 @@ public class PostalAddress {
 	public Country addressCountry;
 
 	/**
+	* The post offce box number for PO box addresses.
+	*/
+	public String postOfficeBoxNumber;
+
+	/**
 	* The locality. For example, Mountain View.
 	*/
 	public String addressLocality;
-
-	/**
-	* The street address. For example, 1600 Amphitheatre Pkwy.
-	*/
-	public String streetAddress;
 
 	/**
 	* The fax number.
@@ -44,9 +44,9 @@ public class PostalAddress {
 	public String faxNumber;
 
 	/**
-	* A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.
+	* Email address.
 	*/
-	public String contactType;
+	public String email;
 
 	/**
 	* The telephone number.
@@ -54,9 +54,19 @@ public class PostalAddress {
 	public String telephone;
 
 	/**
-	* Email address.
+	* A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.
 	*/
-	public String email;
+	public String contactType;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -72,14 +82,4 @@ public class PostalAddress {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

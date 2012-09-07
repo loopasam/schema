@@ -16,7 +16,7 @@ public class DiagnosticProcedure {
 	/**
 	* No documentation available
 	*/
-	public String howPerformed;
+	public String followup;
 
 	/**
 	* No documentation available
@@ -26,12 +26,22 @@ public class DiagnosticProcedure {
 	/**
 	* No documentation available
 	*/
-	public String followup;
+	public String howPerformed;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalCode code;
 
 	/**
 	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
+
+	/**
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
 
 	/**
 	* No documentation available
@@ -46,22 +56,22 @@ public class DiagnosticProcedure {
 	/**
 	* No documentation available
 	*/
-	public Organization recognizingAuthority;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalCode code;
-
-	/**
-	* No documentation available
-	*/
 	public MedicalGuideline guideline;
 
 	/**
 	* No documentation available
 	*/
 	public String alternateName;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -81,17 +91,12 @@ public class DiagnosticProcedure {
 	/**
 	* No documentation available
 	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
+	public String normalRange;
 
 	/**
 	* No documentation available
 	*/
-	public String normalRange;
+	public Drug affectedBy;
 
 	/**
 	* No documentation available
@@ -107,9 +112,4 @@ public class DiagnosticProcedure {
 	* No documentation available
 	*/
 	public MedicalSign signDetected;
-
-	/**
-	* No documentation available
-	*/
-	public Drug affectedBy;
 }

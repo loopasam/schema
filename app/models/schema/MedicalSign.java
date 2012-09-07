@@ -21,17 +21,27 @@ public class MedicalSign {
 	/**
 	* No documentation available
 	*/
-	public MedicalCause cause;
-
-	/**
-	* No documentation available
-	*/
 	public MedicalTherapy possibleTreatment;
 
 	/**
 	* No documentation available
 	*/
+	public MedicalCause cause;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalCode code;
+
+	/**
+	* No documentation available
+	*/
 	public MedicalSpecialty relevantSpecialty;
+
+	/**
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
 
 	/**
 	* No documentation available
@@ -46,22 +56,22 @@ public class MedicalSign {
 	/**
 	* No documentation available
 	*/
-	public Organization recognizingAuthority;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalCode code;
-
-	/**
-	* No documentation available
-	*/
 	public MedicalGuideline guideline;
 
 	/**
 	* No documentation available
 	*/
 	public String alternateName;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -77,14 +87,4 @@ public class MedicalSign {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

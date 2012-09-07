@@ -1,4 +1,0 @@
-self: play -> schema 1.0
-
-require:
-    - play

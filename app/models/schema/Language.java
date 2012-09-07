@@ -9,6 +9,16 @@ import java.util.*;
 public class Language {
 
 	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
+
+	/**
 	* URL of the item.
 	*/
 	public String url;
@@ -22,14 +32,4 @@ public class Language {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

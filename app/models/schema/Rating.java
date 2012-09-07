@@ -9,11 +9,6 @@ import java.util.*;
 public class Rating {
 
 	/**
-	* The rating for the content.
-	*/
-	public String ratingValue;
-
-	/**
 	* The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.
 	*/
 	//public Integer worstRating;
@@ -24,6 +19,11 @@ public class Rating {
 	//public String worstRating;
 
 	/**
+	* The rating for the content.
+	*/
+	public String ratingValue;
+
+	/**
 	* The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.
 	*/
 	//public Integer bestRating;
@@ -32,6 +32,16 @@ public class Rating {
 	* The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.
 	*/
 	//public String bestRating;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -47,14 +57,4 @@ public class Rating {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

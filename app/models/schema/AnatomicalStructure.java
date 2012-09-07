@@ -11,27 +11,7 @@ public class AnatomicalStructure {
 	/**
 	* No documentation available
 	*/
-	public AnatomicalSystem partOfSystem;
-
-	/**
-	* No documentation available
-	*/
-	public String function;
-
-	/**
-	* No documentation available
-	*/
 	public MedicalTherapy relatedTherapy;
-
-	/**
-	* No documentation available
-	*/
-	public AnatomicalStructure subStructure;
-
-	/**
-	* No documentation available
-	*/
-	public AnatomicalStructure connectedTo;
 
 	/**
 	* No documentation available
@@ -46,7 +26,17 @@ public class AnatomicalStructure {
 	/**
 	* No documentation available
 	*/
-	public ImageObject diagram;
+	public AnatomicalStructure subStructure;
+
+	/**
+	* No documentation available
+	*/
+	public AnatomicalSystem partOfSystem;
+
+	/**
+	* No documentation available
+	*/
+	public AnatomicalStructure connectedTo;
 
 	/**
 	* No documentation available
@@ -56,7 +46,27 @@ public class AnatomicalStructure {
 	/**
 	* No documentation available
 	*/
+	public ImageObject diagram;
+
+	/**
+	* No documentation available
+	*/
+	public String function;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalCode code;
+
+	/**
+	* No documentation available
+	*/
 	public MedicalSpecialty relevantSpecialty;
+
+	/**
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
 
 	/**
 	* No documentation available
@@ -71,22 +81,22 @@ public class AnatomicalStructure {
 	/**
 	* No documentation available
 	*/
-	public Organization recognizingAuthority;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalCode code;
-
-	/**
-	* No documentation available
-	*/
 	public MedicalGuideline guideline;
 
 	/**
 	* No documentation available
 	*/
 	public String alternateName;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -102,14 +112,4 @@ public class AnatomicalStructure {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

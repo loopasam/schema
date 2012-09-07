@@ -1,21 +1,16 @@
-	*{URL of the item.}*
-	<span itemprop="url">${_arg.url}</span>
-
-	*{URL of an image of the item.}*
-	<span itemprop="image">${_arg.image}</span>
-
-	*{The name of the item.}*
-	<span itemprop="name">${_arg.name}</span>
-
 	*{No documentation available}*
-	<span itemprop="additionalType">${_arg.additionalType}</span>
-
-	*{A short description of the item.}*
-	<span itemprop="description">${_arg.description}</span>
+	<div itemprop="code" itemscope itemtype="http://schema.org/MedicalCode">
+		#{MedicalCode _arg.code /}
+	</div>
 
 	*{No documentation available}*
 	<div itemprop="relevantSpecialty" itemscope itemtype="http://schema.org/MedicalSpecialty">
 		#{MedicalSpecialty _arg.relevantSpecialty /}
+	</div>
+
+	*{No documentation available}*
+	<div itemprop="recognizingAuthority" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.recognizingAuthority /}
 	</div>
 
 	*{No documentation available}*
@@ -29,20 +24,25 @@
 	</div>
 
 	*{No documentation available}*
-	<div itemprop="recognizingAuthority" itemscope itemtype="http://schema.org/Organization">
-		#{Organization _arg.recognizingAuthority /}
-	</div>
-
-	*{No documentation available}*
-	<div itemprop="code" itemscope itemtype="http://schema.org/MedicalCode">
-		#{MedicalCode _arg.code /}
-	</div>
-
-	*{No documentation available}*
 	<div itemprop="guideline" itemscope itemtype="http://schema.org/MedicalGuideline">
 		#{MedicalGuideline _arg.guideline /}
 	</div>
 
 	*{No documentation available}*
 	<span itemprop="alternateName">${_arg.alternateName}</span>
+
+	*{No documentation available}*
+	<span itemprop="additionalType">${_arg.additionalType}</span>
+
+	*{A short description of the item.}*
+	<span itemprop="description">${_arg.description}</span>
+
+	*{URL of the item.}*
+	<span itemprop="url">${_arg.url}</span>
+
+	*{URL of an image of the item.}*
+	<span itemprop="image">${_arg.image}</span>
+
+	*{The name of the item.}*
+	<span itemprop="name">${_arg.name}</span>
 

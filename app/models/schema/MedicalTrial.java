@@ -11,22 +11,12 @@ public class MedicalTrial {
 	/**
 	* No documentation available
 	*/
-	public MedicalTrialDesign trialDesign;
-
-	/**
-	* No documentation available
-	*/
 	public String phase;
 
 	/**
 	* No documentation available
 	*/
-	public MedicalStudyStatus status;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalEntity studySubject;
+	public MedicalTrialDesign trialDesign;
 
 	/**
 	* No documentation available
@@ -36,12 +26,17 @@ public class MedicalTrial {
 	/**
 	* No documentation available
 	*/
+	public String outcome;
+
+	/**
+	* No documentation available
+	*/
 	public String population;
 
 	/**
 	* No documentation available
 	*/
-	public String outcome;
+	public MedicalStudyStatus status;
 
 	/**
 	* No documentation available
@@ -51,7 +46,22 @@ public class MedicalTrial {
 	/**
 	* No documentation available
 	*/
+	public MedicalEntity studySubject;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalCode code;
+
+	/**
+	* No documentation available
+	*/
 	public MedicalSpecialty relevantSpecialty;
+
+	/**
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
 
 	/**
 	* No documentation available
@@ -66,22 +76,22 @@ public class MedicalTrial {
 	/**
 	* No documentation available
 	*/
-	public Organization recognizingAuthority;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalCode code;
-
-	/**
-	* No documentation available
-	*/
 	public MedicalGuideline guideline;
 
 	/**
 	* No documentation available
 	*/
 	public String alternateName;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -97,14 +107,4 @@ public class MedicalTrial {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

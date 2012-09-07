@@ -1,0 +1,84 @@
+.Restaurant {
+	background-color: #ddeeff;
+	border: 2px solid #a2a2a2;
+	margin-bottom: 2%;
+}
+
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 1%;
+}
+
+.restaurant-logo {
+	width: 50px;
+	height: 50px;
+	background: url(../images/restaurant.png) no-repeat center;
+}
+
+.location-logo {
+	width: 30px;
+	height: 30px;
+	background: url(../images/location.png) no-repeat center;
+}
+
+.reviews-logo {
+	width: 30px;
+	height: 30px;
+	background: url(../images/reviews.png) no-repeat center;
+}
+
+.address {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.PostalAddress {
+	background-color: #fff;
+	margin-top: 2%;
+}
+
+.reviews-wrap {
+	background-color: #fff2bf;
+	margin-top: 2%;
+}
+
+.Review {
+	background-color: #ffe680;
+}
+
+div {
+	border-radius: 5px;
+	padding: 0.5%;
+	margin: 0.5%;
+}
+
+p {
+	font-style: italic;
+}
+
+.restaurant-name {
+	line-height: 2em;
+	font-size: 2em;
+	display: inline-block;
+	font-weight: bold;
+	
+}
+
+h1,h2,h3 {
+	color: #1572d0;
+	padding-left: 1%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.column {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.dateCreated {
+	display: inline-block;
+	font-weight: bold;
+	vertical-align: middle;
+}

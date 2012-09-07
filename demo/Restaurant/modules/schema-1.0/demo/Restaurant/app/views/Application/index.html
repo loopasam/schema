@@ -1,9 +1,0 @@
-*{Render the restaurants}*
-#{extends 'main.html' /}
-#{set title:'Home' /}
-
-#{list items:restaurants, as:'restaurant'}
-<div class="Restaurant" itemscope itemtype="http://schema.org/Restaurant">
-	#{Restaurant restaurant /}
-</div>
-#{/list}

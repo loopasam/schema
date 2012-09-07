@@ -11,47 +11,7 @@ public class JobPosting {
 	/**
 	* No documentation available
 	*/
-	public String employmentType;
-
-	/**
-	* No documentation available
-	*/
-	public String title;
-
-	/**
-	* No documentation available
-	*/
-	public String specialCommitments;
-
-	/**
-	* No documentation available
-	*/
-	public Organization hiringOrganization;
-
-	/**
-	* No documentation available
-	*/
-	public String occupationalCategory;
-
-	/**
-	* No documentation available
-	*/
 	public String experienceRequirements;
-
-	/**
-	* No documentation available
-	*/
-	public String qualifications;
-
-	/**
-	* No documentation available
-	*/
-	public String educationRequirements;
-
-	/**
-	* No documentation available
-	*/
-	public Integer baseSalary;
 
 	/**
 	* No documentation available
@@ -61,27 +21,7 @@ public class JobPosting {
 	/**
 	* No documentation available
 	*/
-	public String benefits;
-
-	/**
-	* No documentation available
-	*/
-	public String skills;
-
-	/**
-	* No documentation available
-	*/
-	public String industry;
-
-	/**
-	* No documentation available
-	*/
-	public String responsibilities;
-
-	/**
-	* No documentation available
-	*/
-	public Date datePosted;
+	public String title;
 
 	/**
 	* No documentation available
@@ -91,12 +31,82 @@ public class JobPosting {
 	/**
 	* No documentation available
 	*/
-	public String salaryCurrency;
+	public String qualifications;
+
+	/**
+	* No documentation available
+	*/
+	public Organization hiringOrganization;
+
+	/**
+	* No documentation available
+	*/
+	public String responsibilities;
+
+	/**
+	* No documentation available
+	*/
+	public Integer baseSalary;
+
+	/**
+	* No documentation available
+	*/
+	public String employmentType;
+
+	/**
+	* No documentation available
+	*/
+	public String benefits;
+
+	/**
+	* No documentation available
+	*/
+	public Date datePosted;
+
+	/**
+	* No documentation available
+	*/
+	public String specialCommitments;
 
 	/**
 	* No documentation available
 	*/
 	public Place jobLocation;
+
+	/**
+	* No documentation available
+	*/
+	public String salaryCurrency;
+
+	/**
+	* No documentation available
+	*/
+	public String educationRequirements;
+
+	/**
+	* No documentation available
+	*/
+	public String industry;
+
+	/**
+	* No documentation available
+	*/
+	public String skills;
+
+	/**
+	* No documentation available
+	*/
+	public String occupationalCategory;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -112,14 +122,4 @@ public class JobPosting {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

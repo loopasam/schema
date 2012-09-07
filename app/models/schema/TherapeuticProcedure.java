@@ -16,7 +16,7 @@ public class TherapeuticProcedure {
 	/**
 	* No documentation available
 	*/
-	public String howPerformed;
+	public String followup;
 
 	/**
 	* No documentation available
@@ -26,12 +26,22 @@ public class TherapeuticProcedure {
 	/**
 	* No documentation available
 	*/
-	public String followup;
+	public String howPerformed;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalCode code;
 
 	/**
 	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
+
+	/**
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
 
 	/**
 	* No documentation available
@@ -46,22 +56,22 @@ public class TherapeuticProcedure {
 	/**
 	* No documentation available
 	*/
-	public Organization recognizingAuthority;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalCode code;
-
-	/**
-	* No documentation available
-	*/
 	public MedicalGuideline guideline;
 
 	/**
 	* No documentation available
 	*/
 	public String alternateName;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -81,22 +91,17 @@ public class TherapeuticProcedure {
 	/**
 	* No documentation available
 	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalIndication indication;
+	public MedicalTherapy duplicateTherapy;
 
 	/**
 	* No documentation available
 	*/
 	public MedicalEntity seriousAdverseOutcome;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalIndication indication;
 
 	/**
 	* No documentation available
@@ -107,9 +112,4 @@ public class TherapeuticProcedure {
 	* No documentation available
 	*/
 	public MedicalEntity adverseOutcome;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalTherapy duplicateTherapy;
 }

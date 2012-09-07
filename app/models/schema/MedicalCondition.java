@@ -11,12 +11,37 @@ public class MedicalCondition {
 	/**
 	* No documentation available
 	*/
-	public String pathophysiology;
+	public MedicalTherapy possibleTreatment;
 
 	/**
 	* No documentation available
 	*/
-	public MedicalTherapy primaryPrevention;
+	public String naturalProgression;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalTherapy secondaryPrevention;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalSignOrSymptom signOrSymptom;
+
+	/**
+	* No documentation available
+	*/
+	public MedicalTest typicalTest;
+
+	/**
+	* No documentation available
+	*/
+	public DDxElement differentialDiagnosis;
+
+	/**
+	* No documentation available
+	*/
+	public String pathophysiology;
 
 	/**
 	* No documentation available
@@ -26,12 +51,27 @@ public class MedicalCondition {
 	/**
 	* No documentation available
 	*/
+	public MedicalCause cause;
+
+	/**
+	* No documentation available
+	*/
+	public String expectedPrognosis;
+
+	/**
+	* No documentation available
+	*/
 	public MedicalRiskFactor riskFactor;
 
 	/**
 	* No documentation available
 	*/
-	public MedicalSignOrSymptom signOrSymptom;
+	public MedicalConditionStage stage;
+
+	/**
+	* No documentation available
+	*/
+	public String subtype;
 
 	/**
 	* No documentation available
@@ -51,42 +91,7 @@ public class MedicalCondition {
 	/**
 	* No documentation available
 	*/
-	public String expectedPrognosis;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalCause cause;
-
-	/**
-	* No documentation available
-	*/
-	public DDxElement differentialDiagnosis;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalTherapy possibleTreatment;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalTherapy secondaryPrevention;
-
-	/**
-	* No documentation available
-	*/
-	public String subtype;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalTest typicalTest;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalConditionStage stage;
+	public MedicalTherapy primaryPrevention;
 
 	/**
 	* No documentation available
@@ -96,12 +101,17 @@ public class MedicalCondition {
 	/**
 	* No documentation available
 	*/
-	public String naturalProgression;
+	public MedicalCode code;
 
 	/**
 	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
+
+	/**
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
 
 	/**
 	* No documentation available
@@ -116,22 +126,22 @@ public class MedicalCondition {
 	/**
 	* No documentation available
 	*/
-	public Organization recognizingAuthority;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalCode code;
-
-	/**
-	* No documentation available
-	*/
 	public MedicalGuideline guideline;
 
 	/**
 	* No documentation available
 	*/
 	public String alternateName;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -147,14 +157,4 @@ public class MedicalCondition {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

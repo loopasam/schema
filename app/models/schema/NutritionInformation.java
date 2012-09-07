@@ -9,44 +9,9 @@ import java.util.*;
 public class NutritionInformation {
 
 	/**
-	* The number of grams of protein.
-	*/
-	public Mass proteinContent;
-
-	/**
-	* The number of grams of trans fat.
-	*/
-	public Mass transFatContent;
-
-	/**
-	* The number of grams of unsaturated fat.
-	*/
-	public Mass unsaturatedFatContent;
-
-	/**
-	* The number of grams of saturated fat.
-	*/
-	public Mass saturatedFatContent;
-
-	/**
-	* The number of calories
-	*/
-	public Energy calories;
-
-	/**
-	* The number of grams of fat.
-	*/
-	public Mass fatContent;
-
-	/**
 	* The serving size, in terms of the number of volume or mass
 	*/
 	public String servingSize;
-
-	/**
-	* The number of milligrams of cholesterol.
-	*/
-	public Mass cholesterolContent;
 
 	/**
 	* The number of milligrams of sodium.
@@ -54,9 +19,34 @@ public class NutritionInformation {
 	public Mass sodiumContent;
 
 	/**
+	* The number of grams of protein.
+	*/
+	public Mass proteinContent;
+
+	/**
+	* The number of grams of sugar.
+	*/
+	public Mass sugarContent;
+
+	/**
 	* The number of grams of fiber.
 	*/
 	public Mass fiberContent;
+
+	/**
+	* The number of grams of trans fat.
+	*/
+	public Mass transFatContent;
+
+	/**
+	* The number of calories
+	*/
+	public Energy calories;
+
+	/**
+	* The number of grams of saturated fat.
+	*/
+	public Mass saturatedFatContent;
 
 	/**
 	* The number of grams of carbohydrates.
@@ -64,9 +54,29 @@ public class NutritionInformation {
 	public Mass carbohydrateContent;
 
 	/**
-	* The number of grams of sugar.
+	* The number of milligrams of cholesterol.
 	*/
-	public Mass sugarContent;
+	public Mass cholesterolContent;
+
+	/**
+	* The number of grams of unsaturated fat.
+	*/
+	public Mass unsaturatedFatContent;
+
+	/**
+	* The number of grams of fat.
+	*/
+	public Mass fatContent;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -82,14 +92,4 @@ public class NutritionInformation {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

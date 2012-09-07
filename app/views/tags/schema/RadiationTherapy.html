@@ -1,11 +1,16 @@
 	*{No documentation available}*
-	<div itemprop="indication" itemscope itemtype="http://schema.org/MedicalIndication">
-		#{MedicalIndication _arg.indication /}
+	<div itemprop="duplicateTherapy" itemscope itemtype="http://schema.org/MedicalTherapy">
+		#{MedicalTherapy _arg.duplicateTherapy /}
 	</div>
 
 	*{No documentation available}*
 	<div itemprop="seriousAdverseOutcome" itemscope itemtype="http://schema.org/MedicalEntity">
 		#{MedicalEntity _arg.seriousAdverseOutcome /}
+	</div>
+
+	*{No documentation available}*
+	<div itemprop="indication" itemscope itemtype="http://schema.org/MedicalIndication">
+		#{MedicalIndication _arg.indication /}
 	</div>
 
 	*{No documentation available}*
@@ -19,13 +24,18 @@
 	</div>
 
 	*{No documentation available}*
-	<div itemprop="duplicateTherapy" itemscope itemtype="http://schema.org/MedicalTherapy">
-		#{MedicalTherapy _arg.duplicateTherapy /}
+	<div itemprop="code" itemscope itemtype="http://schema.org/MedicalCode">
+		#{MedicalCode _arg.code /}
 	</div>
 
 	*{No documentation available}*
 	<div itemprop="relevantSpecialty" itemscope itemtype="http://schema.org/MedicalSpecialty">
 		#{MedicalSpecialty _arg.relevantSpecialty /}
+	</div>
+
+	*{No documentation available}*
+	<div itemprop="recognizingAuthority" itemscope itemtype="http://schema.org/Organization">
+		#{Organization _arg.recognizingAuthority /}
 	</div>
 
 	*{No documentation available}*
@@ -39,22 +49,18 @@
 	</div>
 
 	*{No documentation available}*
-	<div itemprop="recognizingAuthority" itemscope itemtype="http://schema.org/Organization">
-		#{Organization _arg.recognizingAuthority /}
-	</div>
-
-	*{No documentation available}*
-	<div itemprop="code" itemscope itemtype="http://schema.org/MedicalCode">
-		#{MedicalCode _arg.code /}
-	</div>
-
-	*{No documentation available}*
 	<div itemprop="guideline" itemscope itemtype="http://schema.org/MedicalGuideline">
 		#{MedicalGuideline _arg.guideline /}
 	</div>
 
 	*{No documentation available}*
 	<span itemprop="alternateName">${_arg.alternateName}</span>
+
+	*{No documentation available}*
+	<span itemprop="additionalType">${_arg.additionalType}</span>
+
+	*{A short description of the item.}*
+	<span itemprop="description">${_arg.description}</span>
 
 	*{URL of the item.}*
 	<span itemprop="url">${_arg.url}</span>
@@ -64,10 +70,4 @@
 
 	*{The name of the item.}*
 	<span itemprop="name">${_arg.name}</span>
-
-	*{No documentation available}*
-	<span itemprop="additionalType">${_arg.additionalType}</span>
-
-	*{A short description of the item.}*
-	<span itemprop="description">${_arg.description}</span>
 

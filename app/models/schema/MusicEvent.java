@@ -9,29 +9,19 @@ import java.util.*;
 public class MusicEvent {
 
 	/**
-	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor. (legacy spelling; see singular form, performer).
+	* A person attending the event. (legacy spelling; see singular form, attendee).
 	*/
-	//public List<Person> performers;
+	//public List<Person> attendees;
 
 	/**
-	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor. (legacy spelling; see singular form, performer).
+	* A person attending the event. (legacy spelling; see singular form, attendee).
 	*/
-	//public List<Organization> performers;
+	//public List<Organization> attendees;
 
 	/**
-	* The location of the event or organization.
+	* Events that are a part of this event. For example, a conference event includes many presentations, each are subEvents of the conference.
 	*/
-	//public PostalAddress location;
-
-	/**
-	* The location of the event or organization.
-	*/
-	//public Place location;
-
-	/**
-	* An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.
-	*/
-	public Event superEvent;
+	public Event subEvent;
 
 	/**
 	* A person attending the event.
@@ -44,9 +34,24 @@ public class MusicEvent {
 	//public Organization attendee;
 
 	/**
-	* The first broadcast date of the TV season or series.
+	* The end date and time of the event (in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 date format</a>).
 	*/
-	public Date startDate;
+	public Date endDate;
+
+	/**
+	* An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
+	*/
+	public Offer offers;
+
+	/**
+	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor. (legacy spelling; see singular form, performer).
+	*/
+	//public List<Person> performers;
+
+	/**
+	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor. (legacy spelling; see singular form, performer).
+	*/
+	//public List<Organization> performers;
 
 	/**
 	* The main performer or performers of the event&mdash;for example, a presenter, musician, or actor.
@@ -64,34 +69,39 @@ public class MusicEvent {
 	public String duration;
 
 	/**
-	* A person attending the event. (legacy spelling; see singular form, attendee).
-	*/
-	//public List<Person> attendees;
-
-	/**
-	* A person attending the event. (legacy spelling; see singular form, attendee).
-	*/
-	//public List<Organization> attendees;
-
-	/**
-	* An offer to sell this item&mdash;for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
-	*/
-	public Offer offers;
-
-	/**
 	* Events that are a part of this event. For example, a conference event includes many presentations, each are subEvents of the conference. (legacy spelling; see singular form, subEvent).
 	*/
 	public List<Event> subEvents;
 
 	/**
-	* Events that are a part of this event. For example, a conference event includes many presentations, each are subEvents of the conference.
+	* The first broadcast date of the TV season or series.
 	*/
-	public Event subEvent;
+	public Date startDate;
 
 	/**
-	* The end date and time of the event (in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="new">ISO 8601 date format</a>).
+	* The location of the event or organization.
 	*/
-	public Date endDate;
+	//public PostalAddress location;
+
+	/**
+	* The location of the event or organization.
+	*/
+	//public Place location;
+
+	/**
+	* An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.
+	*/
+	public Event superEvent;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -107,14 +117,4 @@ public class MusicEvent {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

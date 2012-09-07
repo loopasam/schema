@@ -9,6 +9,16 @@ import java.util.*;
 public class AggregateOffer {
 
 	/**
+	* The highest price of all offers available.
+	*/
+	//public Integer highPrice;
+
+	/**
+	* The highest price of all offers available.
+	*/
+	//public String highPrice;
+
+	/**
 	* The number of offers for the product.
 	*/
 	public Integer offerCount;
@@ -24,44 +34,9 @@ public class AggregateOffer {
 	//public String lowPrice;
 
 	/**
-	* The highest price of all offers available.
-	*/
-	//public Integer highPrice;
-
-	/**
-	* The highest price of all offers available.
-	*/
-	//public String highPrice;
-
-	/**
-	* The currency (in 3-letter <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 format</a>) of the offer price.
-	*/
-	public String priceCurrency;
-
-	/**
-	* The offer price of the product.
-	*/
-	//public Integer price;
-
-	/**
-	* The offer price of the product.
-	*/
-	//public String price;
-
-	/**
 	* The availability of this item&mdash;for example In stock, Out of stock, Pre-order, etc.
 	*/
 	public ItemAvailability availability;
-
-	/**
-	* The condition of the item for sale&mdash;for example New, Refurbished, Used, etc.
-	*/
-	public OfferItemCondition itemCondition;
-
-	/**
-	* Review of the item. (legacy spelling; see singular form, review).
-	*/
-	public List<Review> reviews;
 
 	/**
 	* The seller of the product.
@@ -74,9 +49,19 @@ public class AggregateOffer {
 	public Date priceValidUntil;
 
 	/**
+	* The condition of the item for sale&mdash;for example New, Refurbished, Used, etc.
+	*/
+	public OfferItemCondition itemCondition;
+
+	/**
 	* The item being sold.
 	*/
 	public Product itemOffered;
+
+	/**
+	* Review of the item.
+	*/
+	public Review review;
 
 	/**
 	* The overall rating, based on a collection of reviews or ratings, of the item.
@@ -84,9 +69,34 @@ public class AggregateOffer {
 	public AggregateRating aggregateRating;
 
 	/**
-	* Review of the item.
+	* The offer price of the product.
 	*/
-	public Review review;
+	//public Integer price;
+
+	/**
+	* The offer price of the product.
+	*/
+	//public String price;
+
+	/**
+	* The currency (in 3-letter <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 format</a>) of the offer price.
+	*/
+	public String priceCurrency;
+
+	/**
+	* Review of the item. (legacy spelling; see singular form, review).
+	*/
+	public List<Review> reviews;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -102,14 +112,4 @@ public class AggregateOffer {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

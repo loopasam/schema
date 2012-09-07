@@ -21,6 +21,11 @@ public class MedicalTestPanel {
 	/**
 	* No documentation available
 	*/
+	public Drug affectedBy;
+
+	/**
+	* No documentation available
+	*/
 	public MedicalCondition usedToDiagnose;
 
 	/**
@@ -36,12 +41,17 @@ public class MedicalTestPanel {
 	/**
 	* No documentation available
 	*/
-	public Drug affectedBy;
+	public MedicalCode code;
 
 	/**
 	* No documentation available
 	*/
 	public MedicalSpecialty relevantSpecialty;
+
+	/**
+	* No documentation available
+	*/
+	public Organization recognizingAuthority;
 
 	/**
 	* No documentation available
@@ -56,22 +66,22 @@ public class MedicalTestPanel {
 	/**
 	* No documentation available
 	*/
-	public Organization recognizingAuthority;
-
-	/**
-	* No documentation available
-	*/
-	public MedicalCode code;
-
-	/**
-	* No documentation available
-	*/
 	public MedicalGuideline guideline;
 
 	/**
 	* No documentation available
 	*/
 	public String alternateName;
+
+	/**
+	* No documentation available
+	*/
+	public String additionalType;
+
+	/**
+	* A short description of the item.
+	*/
+	public String description;
 
 	/**
 	* URL of the item.
@@ -87,14 +97,4 @@ public class MedicalTestPanel {
 	* The name of the item.
 	*/
 	public String name;
-
-	/**
-	* No documentation available
-	*/
-	public String additionalType;
-
-	/**
-	* A short description of the item.
-	*/
-	public String description;
 }

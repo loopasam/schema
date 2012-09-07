@@ -11,10 +11,10 @@ public class Property {
 	/**
 	* No documentation available
 	*/
-	public Type domain;
+	public Type range;
 
 	/**
 	* No documentation available
 	*/
-	public Type range;
+	public Type domain;
 }
