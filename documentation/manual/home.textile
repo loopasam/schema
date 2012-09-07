@@ -1,4 +1,4 @@
-h1. {schema}
+h1. schema
 
 Schema is a module for the Play! framework (1.2.X) which helps you to create _full semantic stack web apps_. The model and view layers of your Play! app are picked from a series of template classes following the schema.org structure. This module helps you to provide next generation content for search engines and to program your application in the scope of the Web.
 
@@ -8,4 +8,4 @@ A sample app called @Restaurant@ in the @sample@ directory demonstrates how to u
 
 h2. Documentation
 
-The full documentation is available on "GitHub.(schema)":https://github.com/loopasam/schema/wiki
+The full documentation is available on "GitHub.":https://github.com/loopasam/schema/wiki
